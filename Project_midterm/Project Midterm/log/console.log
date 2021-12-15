@@ -1,0 +1,190 @@
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# Design: Design "Project Midterm" has been set as active.
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+acom -O3 -e 100 -work Project_Midterm -2002  $dsn/src/alu.vhd $dsn/src/Register_File.vhd $dsn/src/TestBench.vhd $dsn/src/testRegFile.vhd $dsn/src/register_lookup.vhd $dsn/src/Instr_buffer.vhd $dsn/src/Fowarding_Unit.vhd $dsn/src/Four_Stage_Pipeline.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:/Users/Tyguan/Desktop/ESE 345/Project/Project_midterm/Project Midterm/src/alu.vhd
+# Compile Entity "alu"
+# Compile Architecture "alu_arch" of Entity "alu"
+# File: C:/Users/Tyguan/Desktop/ESE 345/Project/Project_midterm/Project Midterm/src/Register_File.vhd
+# Compile Entity "Register_file"
+# Compile Architecture "Register_file_arch" of Entity "Register_file"
+# File: C:/Users/Tyguan/Desktop/ESE 345/Project/Project_midterm/Project Midterm/src/TestBench.vhd
+# Compile Entity "testbench"
+# Compile Architecture "alu_tb" of Entity "testbench"
+# File: C:/Users/Tyguan/Desktop/ESE 345/Project/Project_midterm/Project Midterm/src/testRegFile.vhd
+# Compile Entity "testRegFile"
+# Compile Architecture "testRegFile_Arch" of Entity "testRegFile"
+# File: C:/Users/Tyguan/Desktop/ESE 345/Project/Project_midterm/Project Midterm/src/register_lookup.vhd
+# Compile Entity "register_lookup"
+# Compile Architecture "behavioral" of Entity "register_lookup"
+# File: C:/Users/Tyguan/Desktop/ESE 345/Project/Project_midterm/Project Midterm/src/Instr_buffer.vhd
+# Compile Entity "Instr_buffer"
+# Compile Architecture "Instr_buffer_arch" of Entity "Instr_buffer"
+# File: C:/Users/Tyguan/Desktop/ESE 345/Project/Project_midterm/Project Midterm/src/Fowarding_Unit.vhd
+# Compile Entity "fowarding_unit"
+# Compile Architecture "fowarding_unit_arch" of Entity "fowarding_unit"
+# File: C:/Users/Tyguan/Desktop/ESE 345/Project/Project_midterm/Project Midterm/src/Four_Stage_Pipeline.vhd
+# Compile Entity "Four_Stage_Pipeline"
+# Compile Architecture "Four_Stage_Pipeline_arch" of Entity "Four_Stage_Pipeline"
+# Compile success 0 Errors 0 Warnings  Analysis time :  0.4 [s]
+acom -O3 -e 100 -work Project_Midterm -2002  $dsn/src/Register_File.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:/Users/Tyguan/Desktop/ESE 345/Project/Project_midterm/Project Midterm/src/Register_File.vhd
+# Compile Entity "Register_file"
+# Compile Architecture "Register_file_arch" of Entity "Register_file"
+# Error: COMP96_0078: Register_File.vhd : (59, 39): Unknown identifier "ADDRESS_WIDTH".
+# Error: COMP96_0133: Register_File.vhd : (59, 39): Cannot find object declaration.
+# Error: COMP96_0078: Register_File.vhd : (65, 54): Unknown identifier "ADDRESS_WIDTH".
+# Error: COMP96_0133: Register_File.vhd : (65, 54): Cannot find object declaration.
+# Error: COMP96_0094: Register_File.vhd : (65, 54): Locally static expression is required in the range definition.
+# Compile failure 5 Errors 0 Warnings  Analysis time :  46.0 [ms]
+acom -O3 -e 100 -work Project_Midterm -2002  $dsn/src/Register_File.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:/Users/Tyguan/Desktop/ESE 345/Project/Project_midterm/Project Midterm/src/Register_File.vhd
+# Compile Entity "Register_file"
+# Compile Architecture "Register_file_arch" of Entity "Register_file"
+# Compile success 0 Errors 0 Warnings  Analysis time :  78.0 [ms]
+acom -O3 -e 100 -work Project_Midterm -2002  $dsn/src/Instr_buffer.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:/Users/Tyguan/Desktop/ESE 345/Project/Project_midterm/Project Midterm/src/Instr_buffer.vhd
+# Compile Entity "Instr_buffer"
+# Compile Architecture "Instr_buffer_arch" of Entity "Instr_buffer"
+# Error: COMP96_0078: Instr_buffer.vhd : (53, 39): Unknown identifier "ADDRESS_WIDTH".
+# Error: COMP96_0133: Instr_buffer.vhd : (53, 39): Cannot find object declaration.
+# Compile failure 2 Errors 0 Warnings  Analysis time :  47.0 [ms]
+acom -O3 -e 100 -work Project_Midterm -2002  $dsn/src/Instr_buffer.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:/Users/Tyguan/Desktop/ESE 345/Project/Project_midterm/Project Midterm/src/Instr_buffer.vhd
+# Compile Entity "Instr_buffer"
+# Compile Architecture "Instr_buffer_arch" of Entity "Instr_buffer"
+# Compile success 0 Errors 0 Warnings  Analysis time :  47.0 [ms]
+acom -O3 -e 100 -work Project_Midterm -2002  $dsn/src/Instr_buffer.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:/Users/Tyguan/Desktop/ESE 345/Project/Project_midterm/Project Midterm/src/Instr_buffer.vhd
+# Compile Entity "Instr_buffer"
+# Compile Architecture "Instr_buffer_arch" of Entity "Instr_buffer"
+# Compile success 0 Errors 0 Warnings  Analysis time :  47.0 [ms]
+acom -O3 -e 100 -work Project_Midterm -2002  $dsn/src/alu.vhd $dsn/src/Register_File.vhd $dsn/src/TestBench.vhd $dsn/src/testRegFile.vhd $dsn/src/register_lookup.vhd $dsn/src/Instr_buffer.vhd $dsn/src/Fowarding_Unit.vhd $dsn/src/Four_Stage_Pipeline.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:/Users/Tyguan/Desktop/ESE 345/Project/Project_midterm/Project Midterm/src/alu.vhd
+# Compile Entity "alu"
+# Compile Architecture "alu_arch" of Entity "alu"
+# File: C:/Users/Tyguan/Desktop/ESE 345/Project/Project_midterm/Project Midterm/src/Register_File.vhd
+# Compile Entity "Register_file"
+# Compile Architecture "Register_file_arch" of Entity "Register_file"
+# File: C:/Users/Tyguan/Desktop/ESE 345/Project/Project_midterm/Project Midterm/src/TestBench.vhd
+# Compile Entity "testbench"
+# Compile Architecture "alu_tb" of Entity "testbench"
+# File: C:/Users/Tyguan/Desktop/ESE 345/Project/Project_midterm/Project Midterm/src/testRegFile.vhd
+# Compile Entity "testRegFile"
+# Compile Architecture "testRegFile_Arch" of Entity "testRegFile"
+# File: C:/Users/Tyguan/Desktop/ESE 345/Project/Project_midterm/Project Midterm/src/register_lookup.vhd
+# Compile Entity "register_lookup"
+# Compile Architecture "behavioral" of Entity "register_lookup"
+# File: C:/Users/Tyguan/Desktop/ESE 345/Project/Project_midterm/Project Midterm/src/Instr_buffer.vhd
+# Compile Entity "Instr_buffer"
+# Compile Architecture "Instr_buffer_arch" of Entity "Instr_buffer"
+# File: C:/Users/Tyguan/Desktop/ESE 345/Project/Project_midterm/Project Midterm/src/Fowarding_Unit.vhd
+# Compile Entity "fowarding_unit"
+# Compile Architecture "fowarding_unit_arch" of Entity "fowarding_unit"
+# File: C:/Users/Tyguan/Desktop/ESE 345/Project/Project_midterm/Project Midterm/src/Four_Stage_Pipeline.vhd
+# Compile Entity "Four_Stage_Pipeline"
+# Error: COMP96_0078: Four_Stage_Pipeline.vhd : (31, 46): Unknown identifier "INSTR_WIDTH".
+# Error: COMP96_0133: Four_Stage_Pipeline.vhd : (31, 46): Cannot find object declaration.
+# Error: COMP96_0094: Four_Stage_Pipeline.vhd : (31, 46): Locally static expression is required in the range definition.
+# Compile Architecture "Four_Stage_Pipeline_arch" of Entity "Four_Stage_Pipeline"
+# Compile failure 3 Errors 0 Warnings  Analysis time :  0.4 [s]
+acom -O3 -e 100 -work Project_Midterm -2002  $dsn/src/Four_Stage_Pipeline.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:/Users/Tyguan/Desktop/ESE 345/Project/Project_midterm/Project Midterm/src/Four_Stage_Pipeline.vhd
+# Compile Entity "Four_Stage_Pipeline"
+# Error: COMP96_0015: Four_Stage_Pipeline.vhd : (33, 14): ')' expected.
+# Error: COMP96_0015: Four_Stage_Pipeline.vhd : (33, 14): ';' expected.
+# Error: COMP96_0019: Four_Stage_Pipeline.vhd : (33, 14): Keyword 'end' expected.
+# Error: COMP96_0016: Four_Stage_Pipeline.vhd : (33, 16): Design unit declaration expected.
+# Compile Architecture "Four_Stage_Pipeline_arch" of Entity "Four_Stage_Pipeline"
+# Error: COMP96_0015: Four_Stage_Pipeline.vhd : (51, 13): ')' expected.
+# Error: COMP96_0015: Four_Stage_Pipeline.vhd : (52, 3): ';' expected.
+# Compile failure 6 Errors 0 Warnings  Analysis time :  15.0 [ms]
+acom -O3 -e 100 -work Project_Midterm -2002  $dsn/src/Four_Stage_Pipeline.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:/Users/Tyguan/Desktop/ESE 345/Project/Project_midterm/Project Midterm/src/Four_Stage_Pipeline.vhd
+# Compile Entity "Four_Stage_Pipeline"
+# Compile Architecture "Four_Stage_Pipeline_arch" of Entity "Four_Stage_Pipeline"
+# Error: COMP96_0015: Four_Stage_Pipeline.vhd : (51, 13): ')' expected.
+# Error: COMP96_0015: Four_Stage_Pipeline.vhd : (52, 3): ';' expected.
+# Compile failure 2 Errors 0 Warnings  Analysis time :  94.0 [ms]
+acom -O3 -e 100 -work Project_Midterm -2002  $dsn/src/Four_Stage_Pipeline.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:/Users/Tyguan/Desktop/ESE 345/Project/Project_midterm/Project Midterm/src/Four_Stage_Pipeline.vhd
+# Compile Entity "Four_Stage_Pipeline"
+# Compile Architecture "Four_Stage_Pipeline_arch" of Entity "Four_Stage_Pipeline"
+# Error: COMP96_0015: Four_Stage_Pipeline.vhd : (51, 13): ')' expected.
+# Error: COMP96_0015: Four_Stage_Pipeline.vhd : (52, 3): ';' expected.
+# Compile failure 2 Errors 0 Warnings  Analysis time :  78.0 [ms]
+acom -O3 -e 100 -work Project_Midterm -2002  $dsn/src/Four_Stage_Pipeline.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:/Users/Tyguan/Desktop/ESE 345/Project/Project_midterm/Project Midterm/src/Four_Stage_Pipeline.vhd
+# Compile Entity "Four_Stage_Pipeline"
+# Compile Architecture "Four_Stage_Pipeline_arch" of Entity "Four_Stage_Pipeline"
+# Error: COMP96_0015: Four_Stage_Pipeline.vhd : (51, 13): ')' expected.
+# Error: COMP96_0015: Four_Stage_Pipeline.vhd : (52, 3): ';' expected.
+# Compile failure 2 Errors 0 Warnings  Analysis time :  62.0 [ms]
+acom -O3 -e 100 -work Project_Midterm -2002  $dsn/src/Four_Stage_Pipeline.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:/Users/Tyguan/Desktop/ESE 345/Project/Project_midterm/Project Midterm/src/Four_Stage_Pipeline.vhd
+# Compile Entity "Four_Stage_Pipeline"
+# Compile Architecture "Four_Stage_Pipeline_arch" of Entity "Four_Stage_Pipeline"
+# Error: COMP96_0078: Four_Stage_Pipeline.vhd : (50, 20): Unknown identifier "Instr_buffer".
+# Error: COMP96_0056: Four_Stage_Pipeline.vhd : (50, 20): Cannot find referenced entity declaration "Instr_buffer".
+# Error: COMP96_0055: Four_Stage_Pipeline.vhd : (50, 20): Cannot find context item "Instr_buffer".
+# Compile failure 3 Errors 0 Warnings  Analysis time :  63.0 [ms]
+acom -O3 -e 100 -work Project_Midterm -2002  $dsn/src/Four_Stage_Pipeline.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:/Users/Tyguan/Desktop/ESE 345/Project/Project_midterm/Project Midterm/src/Four_Stage_Pipeline.vhd
+# Error: COMP96_0015: Four_Stage_Pipeline.vhd : (32, 1): ';' expected.
+# Error: COMP96_0016: Four_Stage_Pipeline.vhd : (32, 8): Design unit declaration expected.
+# Error: COMP96_0016: Four_Stage_Pipeline.vhd : (32, 28): Design unit declaration expected.
+# Compile Architecture "Four_Stage_Pipeline_arch" of Entity "Four_Stage_Pipeline"
+# Error: COMP96_0078: Four_Stage_Pipeline.vhd : (54, 20): Unknown identifier "Instr_buffer".
+# Error: COMP96_0056: Four_Stage_Pipeline.vhd : (54, 20): Cannot find referenced entity declaration "Instr_buffer".
+# Error: COMP96_0055: Four_Stage_Pipeline.vhd : (54, 20): Cannot find context item "Instr_buffer".
+# Compile failure 6 Errors 0 Warnings  Analysis time :  16.0 [ms]
+acom -O3 -e 100 -work Project_Midterm -2002  $dsn/src/Four_Stage_Pipeline.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:/Users/Tyguan/Desktop/ESE 345/Project/Project_midterm/Project Midterm/src/Four_Stage_Pipeline.vhd
+# Compile Entity "Four_Stage_Pipeline"
+# Error: COMP96_0078: Four_Stage_Pipeline.vhd : (30, 5): Unknown identifier "Procject_midterm".
+# Compile Architecture "Four_Stage_Pipeline_arch" of Entity "Four_Stage_Pipeline"
+# Error: COMP96_0078: Four_Stage_Pipeline.vhd : (54, 20): Unknown identifier "Instr_buffer".
+# Error: COMP96_0056: Four_Stage_Pipeline.vhd : (54, 20): Cannot find referenced entity declaration "Instr_buffer".
+# Error: COMP96_0055: Four_Stage_Pipeline.vhd : (54, 20): Cannot find context item "Instr_buffer".
+# Compile failure 4 Errors 0 Warnings  Analysis time :  94.0 [ms]
+acom -O3 -e 100 -work Project_Midterm -2002  $dsn/src/Four_Stage_Pipeline.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:/Users/Tyguan/Desktop/ESE 345/Project/Project_midterm/Project Midterm/src/Four_Stage_Pipeline.vhd
+# Error: COMP96_0015: Four_Stage_Pipeline.vhd : (29, 17): ';' expected.
+# Error: COMP96_0016: Four_Stage_Pipeline.vhd : (29, 24): Design unit declaration expected.
+# Compile Entity "Four_Stage_Pipeline"
+# Error: COMP96_0078: Four_Stage_Pipeline.vhd : (30, 5): Unknown identifier "Procject_midterm".
+# Error: COMP96_0078: Four_Stage_Pipeline.vhd : (43, 12): Unknown identifier "STD_LOGIC".
+# Error: COMP96_0064: Four_Stage_Pipeline.vhd : (43, 12): Unknown type.
+# Error: COMP96_0078: Four_Stage_Pipeline.vhd : (44, 29): Unknown identifier "STD_LOGIC_VECTOR".
+# Error: COMP96_0064: Four_Stage_Pipeline.vhd : (44, 29): Unknown type.
+# Error: COMP96_0078: Four_Stage_Pipeline.vhd : (46, 16): Unknown identifier "STD_LOGIC_VECTOR".
+# Error: COMP96_0064: Four_Stage_Pipeline.vhd : (46, 16): Unknown type.
+# Compile Architecture "Four_Stage_Pipeline_arch" of Entity "Four_Stage_Pipeline"
+# Error: COMP96_0078: Four_Stage_Pipeline.vhd : (54, 20): Unknown identifier "Instr_buffer".
+# Error: COMP96_0056: Four_Stage_Pipeline.vhd : (54, 20): Cannot find referenced entity declaration "Instr_buffer".
+# Error: COMP96_0055: Four_Stage_Pipeline.vhd : (54, 20): Cannot find context item "Instr_buffer".
+# Compile failure 12 Errors 0 Warnings  Analysis time :  78.0 [ms]
+# Error:  You do not have valid license to use workspace with more than one design. Contact Aldec for ordering information sales@aldec.com
+acom -O3 -e 100 -work Project_Midterm -2002  $dsn/src/Four_Stage_Pipeline.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:/Users/Tyguan/Desktop/ESE 345/Project/Project_midterm/Project Midterm/src/Four_Stage_Pipeline.vhd
+# Compile Entity "Four_Stage_Pipeline"
+# Compile Architecture "Four_Stage_Pipeline_arch" of Entity "Four_Stage_Pipeline"
+# Compile success 0 Errors 0 Warnings  Analysis time :  78.0 [ms]

@@ -1,0 +1,14 @@
+[Version]
+Version=11.1
+[Designs]
+project midterm=.\Project Midterm\Project Midterm.adf
+[Browser]
+sort=order
+mode=none
+[Order]
+order=1
+macro=
+[Expand]
+project midterm=1
+[Settings]
+Active=project midterm

@@ -1,0 +1,104 @@
+timestamp=1638553041690
+
+[~A]
+ModifyID=636
+Version=74
+
+[~MFT]
+0=2|0Project_Final.mgf|60284|12171
+1=2|1Project_Final.mgf|46225|18656
+3=2|3Project_Final.mgf|11193|0
+
+[alu]
+A/alu_arch=21|../src/alu.vhd|32|1*12728
+BinI32/alu_arch=3*3660
+I=0*14363
+I/alu_arch=0*25952
+M=11|0|ve4|1638519545681|../src/alu.vhd|0*13546*0x51849fc9fba3de43df550ae0ada16afaf36f4719|0*14292*0xd986fd7175c8cf28cd774bcadde79966
+M/alu_arch=21|0|ve4|1638519545694|../src/alu.vhd|0*14599*0x0b104e9162bb01ae485446b4d5acfb2f6de4299a|0*25869*0xb966535deb9617f745ced53ae4cc1a7f
+R=../src/alu.vhd|8
+Version=11.1.262.7351 (Windows)|00000009789cd3f53756d0353230b00000090c01c7|fdc9c85601beb4171a6a25c637e2168e69e75c0a1bf45aa737b1e970e4d3ed62
+Version/alu_arch=11.1.262.7351 (Windows)|00000009789cd3f53756d0353230b00000090c01c7|26d05e0a26fcca5d0fca101a69c84f6c8e9d9588c4ff5cca4594dc3e49d761f722cdfe60b9ca72fd87f14ae822d53b69
+
+[four_stage_pipeline]
+A/four_stage_pipeline_arch=A/Four_Stage_Pipeline_arch 21|../src/Four_Stage_Pipeline.vhd|77|1*17860
+BinI32/four_stage_pipeline_arch=3*10129
+I=0*28963
+I/four_stage_pipeline_arch=I/Four_Stage_Pipeline_arch 0*35021
+M=11|0|ve4|1638519545758|../src/Four_Stage_Pipeline.vhd|0*26709*0xcfc2707415b8f8c5110496feea756b0899100864|0*28860*0xd986fd7175c8cf28cd774bcadde79966
+M/four_stage_pipeline_arch=M/Four_Stage_Pipeline_arch 21|0|ve4|1638519545795|../src/Four_Stage_Pipeline.vhd|0*29215*0x3620046fe9cf7c8ff7aa79bd2f67dc5845ad986d|0*34890*0xb966535deb9617f745ced53ae4cc1a7f
+R=../src/Four_Stage_Pipeline.vhd|9
+Version=11.1.262.7351 (Windows)|00000009789cd3f53756d0353230b00000090c01c7|297f63b1142da9cdabf9f12d7ae13c5374ea340667fcf9c6935adc94ed35d9bada7d41be716808e64b6ba0b3276b7cb0
+Version/four_stage_pipeline_arch=11.1.262.7351 (Windows)|00000009789cd3f53756d0353230b00000090c01c7|297f63b1142da9cdabf9f12d7ae13c53c63ebf9e301ad38e574b68ff9907688dffe244707b02f6b06438e7fe72be9ca9eb2e6a5a6c0b554caa3cbfb7bdfb66e4
+
+[fowarding_mux]
+A/fowarding_mux_arch=A/Fowarding_Mux_arch 21|../src/Fowarding_Mux.vhd|45|1*556
+BinI32/fowarding_mux_arch=3*0
+I=0*2382
+I/fowarding_mux_arch=I/Fowarding_Mux_arch 0*3521
+M=11|0|ve4|1638519545514|../src/Fowarding_Mux.vhd|0*1335*0xe349c026be98d9ad00e7612e25f3d306abe8d473|0*2291*0xd986fd7175c8cf28cd774bcadde79966
+M/fowarding_mux_arch=M/Fowarding_Mux_arch 21|0|ve4|1638519545521|../src/Fowarding_Mux.vhd|0*2588*0xba178a5ff21044467fa2f8403d4e929e9c85e8cc|0*3408*0xb966535deb9617f745ced53ae4cc1a7f
+R=../src/Fowarding_Mux.vhd|6
+Version=11.1.262.7351 (Windows)|00000009789cd3f53756d0353230b00000090c01c7|246d59415bf7300ab2c72a7c46e6b6302f00c9403a4e0e16bd94a7146ff53c6c02bbc6416ba46bc0825a400235ae23d9
+Version/fowarding_mux_arch=11.1.262.7351 (Windows)|00000009789cd3f53756d0353230b00000090c01c7|246d59415bf7300ab2c72a7c46e6b63072d1b287630c522cbc15ff814ce98b9984a711437fa92bb77e8860b814f949ca
+
+[fowarding_unit]
+A/fowarding_unit_arch=21|../src/Fowarding_Unit.vhd|41|1*10487
+BinI32/fowarding_unit_arch=3*3141
+I=0*11890
+I/fowarding_unit_arch=0*13035
+M=11|0|ve4|1638519545655|../src/Fowarding_Unit.vhd|0*11039*0xd520b87db3929144dea2c68b2db42cb8f58671c7|0*11797*0xd986fd7175c8cf28cd774bcadde79966
+M/fowarding_unit_arch=21|0|ve4|1638519545657|../src/Fowarding_Unit.vhd|0*12097*0xa649fad9244e7af9df9cff71ff2457b7a3a2ff91|0*12919*0xb966535deb9617f745ced53ae4cc1a7f
+R=../src/Fowarding_Unit.vhd|6
+Version=11.1.262.7351 (Windows)|00000009789cd3f53756d0353230b00000090c01c7|1c3d5289cddfc486928a1ad071d45f84eb4d2a20e37e2edbde8896a3d00f32432bb24dffef11fb1ff407f07d4fc98f6c
+Version/fowarding_unit_arch=11.1.262.7351 (Windows)|00000009789cd3f53756d0353230b00000090c01c7|1c3d5289cddfc486928a1ad071d45f84e1854e134517de4f5872d85d60eb78ab771622eeaeed725d12a8a2bd49525bea
+
+[instr_buffer]
+A/instr_buffer_arch=A/Instr_buffer_arch 21|../src/Instr_buffer.vhd|32|1*7980
+BinI32/instr_buffer_arch=3*2094
+I=0*9065
+I/instr_buffer_arch=I/Instr_buffer_arch 0*10466
+M=11|0|ve4|1638519545631|../src/Instr_buffer.vhd|0*8472*0x9fd4594b11113150ade48f11101616b771f3dfe0|0*8976*0xd986fd7175c8cf28cd774bcadde79966
+M/instr_buffer_arch=M/Instr_buffer_arch 21|0|ve4|1638519545633|../src/Instr_buffer.vhd|0*9310*0x3b2d36d228a10152faedd8e4390fdbbce8a5d2c5|0*10356*0xb966535deb9617f745ced53ae4cc1a7f
+R=../src/Instr_buffer.vhd|7
+Version=11.1.262.7351 (Windows)|00000009789cd3f53756d0353230b00000090c01c7|8eb89a2b9cb8822f5ac503da050b4825ab3781b6793c49da3e3e517e0c77f0462e46a82fcc9d63ede298ba429032253f
+Version/instr_buffer_arch=11.1.262.7351 (Windows)|00000009789cd3f53756d0353230b00000090c01c7|b71c33e447ebcf6fcc8f49e3f93c61b1e462c612045b967e7c13c4c6b1a51de4a781f8036c729cf5f3756d25508fa615
+
+[pipeline_tb]
+A/behav=21|../src/PipeLine_tb.vhd|16|1*46225
+BinI32/behav=3*11193
+I=0*36023
+I/behav=0*60284
+M=11|0|ve4|1638519545839|../src/PipeLine_tb.vhd|0*35601*0x810770341c3f437dd803991eb5f3153841c5a67e|0*35936*0xd986fd7175c8cf28cd774bcadde79966
+M/behav=21|0|ve4|1638553041647|../src/PipeLine_tb.vhd|0*48514*0x794350755ea338b3d743052589bd7837f3e35c75|0*60188*0xb966535deb9617f745ced53ae4cc1a7f
+R=../src/PipeLine_tb.vhd|13
+Version=11.1.262.7351 (Windows)|00000009789cd3f53756d0353230b00000090c01c7|41290823d09204d100e9523e50d0d8fba3a0a20355a5cb7df40997658d5065f0892adac759613b52110cb44b11b2b8db
+Version/behav=11.1.262.7351 (Windows)|00000009789cd3f53756d0353230b00000090c01c7|b5c4f9e89f0d95544b19889619d364732d164a77aec0a6c3b18be39b135e76fe
+
+[reg_file_mem_type]
+E=1*0
+I=0*786
+M=3|0|ve4|1638519545463|../src/Reg_File_Mem_Type.vhd|0*409*0xc8ead67b7c5d645e5b37971d213d3946420f0c2b|0*687*0xd986fd7175c8cf28cd774bcadde79966
+R=../src/Reg_File_Mem_Type.vhd|29
+Version=11.1.262.7351 (Windows)|00000009789cd3f53756d0353230b00000090c01c7|dac2762e8cb7c33d79180e169b651e797dd26971e2201cc24bd99cddecb9746ca857806c45dd9e3e8e56cca5a7edab62
+
+[register_file]
+A/register_file_arch=A/Register_file_arch 21|../src/Register_File.vhd|66|1*3234
+BinI32/register_file_arch=3*575
+I=0*5682
+I/register_file_arch=I/Register_file_arch 0*7876
+M=11|0|ve4|1638519545602|../src/Register_File.vhd|0*4149*0x15520caea23f7fc29a7a4bf3f8ebd167ccd25531|0*5591*0xd986fd7175c8cf28cd774bcadde79966
+M/register_file_arch=M/Register_file_arch 21|0|ve4|1638519545605|../src/Register_File.vhd|0*5971*0x1afbafc4677c4d648854be4e30b2ed4e4726fe18|0*7763*0xb966535deb9617f745ced53ae4cc1a7f
+R=../src/Register_File.vhd|11
+Version=11.1.262.7351 (Windows)|00000009789cd3f53756d0353230b00000090c01c7|a396fecd832e4041f15ae1be4d0acbff9590461053dd9c77b27bc3f69d93ce3938a4b85020bcab68cdd35131117d9751
+Version/register_file_arch=11.1.262.7351 (Windows)|00000009789cd3f53756d0353230b00000090c01c7|a396fecd832e4041f15ae1be4d0acbffd853c75a132b78ec330627ac0bfb694c9ea009e7e4e68bf239545f73a868adfb
+
+[~U]
+alu=11|0*13262|
+four_stage_pipeline=Four_Stage_Pipeline 11|0*26197|
+fowarding_mux=Fowarding_Mux 11|0*1036|
+fowarding_unit=11|0*10729|
+instr_buffer=Instr_buffer 11|0*8184|
+pipeline_tb=11|0*35473|
+reg_file_mem_type=Reg_File_Mem_Type 3|0*0|0*215
+register_file=Register_file 11|0*3746|

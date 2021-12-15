@@ -1,0 +1,166 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML>
+
+<!----------------------------------------------------------------------------->
+<!--                          BEGIN HTML HEAD                                -->
+<!--                                                                         -->
+
+<HEAD>
+<TITLE>Code2Graphics generation results</TITLE>
+<STYLE>
+* {font-family: sans-serif;}
+.Err	{color:#FF0000;cursor:hand;text-decoration:underline;}
+.Warn	{color:#0000FF;cursor:hand;text-decoration:underline;}
+.Info	{color:#000000;cursor:hand;text-decoration:underline;}
+.Sccss  {color:#009600;cursor:hand;text-decoration:underline;}
+.ErrH	{color:#FF0000;cursor:hand;text-decoration:underline;}
+.WarnH	{color:#0000FF;cursor:hand;text-decoration:underline;}
+.InfoH	{color:#000000;cursor:hand;text-decoration:underline;}
+.Err1	{color:#FF0000;}
+.Warn1	{color:#0000FF;}
+.Info1	{color:#000000;}
+.Sccss1 {color:#009600;}
+</STYLE>
+</HEAD>
+<BODY BGCOLOR="white" TEXT="black" LINK="blue" VLINK="purple" style="background-image:url(file:///C:/Aldec/Active-HDL-Student-Edition/Flows/Res/default.bmp); background-repeat: repeat;">
+<tt>
+<!--                                                                         -->
+<!--                             END HEADER                                  -->
+<!----------------------------------------------------------------------------->
+
+<!----------------------------------------------------------------------------->
+<!--                            BEGIN VBSCRIPT                               -->
+<!--                                                                         -->
+<SCRIPT LANGUAGE=JSCRIPT>
+	function RollOn() {
+		switch(window.event.srcElement.className) {
+			case 'Err':
+				window.event.srcElement.className = 'ErrH'; break;
+			case 'Warn':
+				window.event.srcElement.className = 'WarnH'; break;
+			case 'Info':
+				window.event.srcElement.className = 'InfoH'; break;
+		}
+	}
+	function RollOff() {
+		switch(window.event.srcElement.className) {
+			case 'ErrH':
+				window.event.srcElement.className = 'Err'; break;
+			case 'WarnH':
+				window.event.srcElement.className = 'Warn'; break;
+			case 'InfoH':
+				window.event.srcElement.className = 'Info'; break;
+		}
+	}
+	function OnError(sMsg,sUrl,sLine) {
+		return true;
+	}
+	
+	document.onmouseover = RollOn;
+	document.onmouseout = RollOff;
+	window.onerror = OnError;
+</SCRIPT>
+
+<SCRIPT LANGUAGE=VBSCRIPT>
+
+Function IID_IDispatch
+	IID_IDispatch = "{00020400-0000-0000-C000-000000000046}"
+End Function
+
+Function CLSID_Executor
+	CLSID_Executor = "Aldec.ExePlugIn.Generic.7"
+End Function
+
+
+Sub OpenPlugIn (progid, template, document, element, string)
+
+	Dim executor, command
+
+	Set executor = window.external.aldec.connector.OpenPlugIn(CLSID_Executor, IID_IDispatch)
+
+	command = "?Activate[<"+progid+">][<"+template+">][<"+document+">][<"+element+">][<"+string+">]"
+
+	executor.ExecuteCommand command, ""
+
+End Sub
+
+
+</SCRIPT>
+<!--                                                                         -->
+<!--                             END VBSCRIPT                                -->
+<!----------------------------------------------------------------------------->
+
+<H2>Code2Graphics generation results</H2>
+
+Created on Fri 2021-12-03 at 02:48:24
+<hr style="height:2px;border-width:0;color:#008080;background-color:#008080">
+<SPAN class=Info1>CODE2GRAPHICS SETTINGS:</SPAN><BR>
+<SPAN class=Info1> </SPAN><BR>
+<SPAN class=Info1>Multipage block diagrams generation: DISABLED</SPAN><BR>
+<SPAN class=Info1>Hierarchical state diagrams generation: DISABLED</SPAN><BR>
+<SPAN class=Info1> </SPAN><BR>
+<SPAN class=Info1>INTERMEDIATE FILES GENERATION:</SPAN><BR>
+<SPAN class=Info1> </SPAN><BR>
+<SPAN class=Info1>Analyzing intermediate file C:\Users\Tyguan\AppData\Local\Temp\project_final\project_final.erf ...</SPAN><BR>
+<SPAN class=Info1>File: C:\Users\Tyguan\Desktop\ESE 345\Project\Project_Final\Project_Final\Project_Final\src\alu.vhd</SPAN><BR>
+<SPAN class=Info1>Checking Entity &quot;alu&quot;</SPAN><BR>
+<SPAN class=Info1>Checking Architecture &quot;alu_arch&quot; of Entity &quot;alu&quot;</SPAN><BR>
+<SPAN class=Info1>File: C:\Users\Tyguan\Desktop\ESE 345\Project\Project_Final\Project_Final\Project_Final\src\Four_Stage_Pipeline.vhd</SPAN><BR>
+<SPAN class=Info1>Checking Entity &quot;Four_Stage_Pipeline&quot;</SPAN><BR>
+<SPAN class=Info1>Checking Architecture &quot;Four_Stage_Pipeline_arch&quot; of Entity &quot;Four_Stage_Pipeline&quot;</SPAN><BR>
+<SPAN class=Info1>File: C:\Users\Tyguan\Desktop\ESE 345\Project\Project_Final\Project_Final\Project_Final\src\Fowarding_Mux.vhd</SPAN><BR>
+<SPAN class=Info1>Checking Entity &quot;Fowarding_Mux&quot;</SPAN><BR>
+<SPAN class=Info1>Checking Architecture &quot;Fowarding_Mux_arch&quot; of Entity &quot;Fowarding_Mux&quot;</SPAN><BR>
+<SPAN class=Info1>File: C:\Users\Tyguan\Desktop\ESE 345\Project\Project_Final\Project_Final\Project_Final\src\Fowarding_Unit.vhd</SPAN><BR>
+<SPAN class=Info1>Checking Entity &quot;fowarding_unit&quot;</SPAN><BR>
+<SPAN class=Info1>Checking Architecture &quot;fowarding_unit_arch&quot; of Entity &quot;fowarding_unit&quot;</SPAN><BR>
+<SPAN class=Info1>File: C:\Users\Tyguan\Desktop\ESE 345\Project\Project_Final\Project_Final\Project_Final\src\Instr_buffer.vhd</SPAN><BR>
+<SPAN class=Info1>Checking Entity &quot;Instr_buffer&quot;</SPAN><BR>
+<SPAN class=Info1>Checking Architecture &quot;Instr_buffer_arch&quot; of Entity &quot;Instr_buffer&quot;</SPAN><BR>
+<SPAN class=Info1>File: C:\Users\Tyguan\Desktop\ESE 345\Project\Project_Final\Project_Final\Project_Final\src\Register_File.vhd</SPAN><BR>
+<SPAN class=Info1>Checking Entity &quot;Register_file&quot;</SPAN><BR>
+<SPAN class=Info1>Checking Architecture &quot;Register_file_arch&quot; of Entity &quot;Register_file&quot;</SPAN><BR>
+<SPAN class=Info1>Incorrect order of units detected.</SPAN><BR>
+<SPAN class=Info1>Automatic reorder and incremental recompilation of required units in progress.</SPAN><BR>
+<SPAN class=Info1>File: C:\Users\Tyguan\Desktop\ESE 345\Project\Project_Final\Project_Final\Project_Final\src\Four_Stage_Pipeline.vhd</SPAN><BR>
+<SPAN class=Sccss1>Checking success 0 Errors 0 Warnings&nbsp;Analysis time :&nbsp;0.6 [s]</SPAN><BR>
+<SPAN class=Info1>Finished successfully.</SPAN><BR>
+<SPAN class=Info1> </SPAN><BR>
+<SPAN class=Info1>Analyzing intermediate file C:/Users/Tyguan/AppData/Local/Temp/project_final/Instr_buffer.lid_old ...</SPAN><BR>
+<SPAN class=Info1>Analyzing intermediate file C:/Users/Tyguan/AppData/Local/Temp/project_final/Register_File.lid_old ...</SPAN><BR>
+<SPAN class=Info1>Updating components according to libraries data ...</SPAN><BR>
+<SPAN class=Info1>Generating temporary state diagram file C:/Users/Tyguan/AppData/Local/Temp/1797B04.tmp...</SPAN><BR>
+<SPAN class=Info1>Generating temporary state diagram file C:/Users/Tyguan/AppData/Local/Temp/1797B06.tmp...</SPAN><BR>
+<SPAN class=Info1>Analyzing intermediate file C:/Users/Tyguan/AppData/Local/Temp/project_final/alu_alu_arch.lid ...</SPAN><BR>
+<SPAN class=Info1>Analyzing intermediate file C:/Users/Tyguan/AppData/Local/Temp/project_final/Four_Stage_Pipeline_Four_Stage_Pipeline_arch.lid ...</SPAN><BR>
+<SPAN class=Info1>Analyzing intermediate file C:/Users/Tyguan/AppData/Local/Temp/project_final/Fowarding_Mux_Fowarding_Mux_arch.lid ...</SPAN><BR>
+<SPAN class=Info1>Analyzing intermediate file C:/Users/Tyguan/AppData/Local/Temp/project_final/fowarding_unit_fowarding_unit_arch.lid ...</SPAN><BR>
+<SPAN class=Info1>Analyzing intermediate file C:/Users/Tyguan/AppData/Local/Temp/project_final/Instr_buffer_Instr_buffer_arch.lid ...</SPAN><BR>
+<SPAN class=Info1>Analyzing intermediate file C:/Users/Tyguan/AppData/Local/Temp/project_final/Register_file_Register_file_arch.lid ...</SPAN><BR>
+<SPAN class=Info1>Updating components according to libraries data ...</SPAN><BR>
+<SPAN class=Info1>Generating temporary block diagram file C:/Users/Tyguan/AppData/Local/Temp/1767ADC.tmp ...</SPAN><BR>
+<SPAN class=Info1>Temporary block diagram file has been successfully generated.</SPAN><BR>
+<SPAN class=Info1>Generating temporary block diagram file C:/Users/Tyguan/AppData/Local/Temp/1787AEE.tmp ...</SPAN><BR>
+<SPAN class=Info1>Temporary block diagram file has been successfully generated.</SPAN><BR>
+<SPAN class=Info1>Generating temporary block diagram file C:/Users/Tyguan/AppData/Local/Temp/1787AF0.tmp ...</SPAN><BR>
+<SPAN class=Info1>Temporary block diagram file has been successfully generated.</SPAN><BR>
+<SPAN class=Info1>Generating temporary block diagram file C:/Users/Tyguan/AppData/Local/Temp/1787AF2.tmp ...</SPAN><BR>
+<SPAN class=Info1>Temporary block diagram file has been successfully generated.</SPAN><BR>
+<SPAN class=Info1>Generating temporary block diagram file C:/Users/Tyguan/AppData/Local/Temp/1797B03.tmp ...</SPAN><BR>
+<SPAN class=Info1>Temporary block diagram file has been successfully generated.</SPAN><BR>
+<SPAN class=Info1>Generating temporary block diagram file C:/Users/Tyguan/AppData/Local/Temp/1797B05.tmp ...</SPAN><BR>
+<SPAN class=Info1>Temporary block diagram file has been successfully generated.</SPAN><BR>
+<SPAN class=Info1>Diagram file(s) generation completed in 3.0 seconds.</SPAN><BR>
+<SPAN class=Info1> </SPAN><BR>
+<SPAN class=Sccss1 onclick="OpenPlugIn('Aldec.BDE.7','0','C:/Users/Tyguan/Desktop/ESE 345/Project/Project_Final/Project_Final/Project_Final/src/alu.bde','','');">File <SPAN class=Sccss>C:/Users/Tyguan/Desktop/ESE 345/Project/Project_Final/Project_Final/Project_Final/src/alu.bde</SPAN> has been successfully generated.</SPAN><BR>
+<SPAN class=Sccss1 onclick="OpenPlugIn('Aldec.BDE.7','0','C:/Users/Tyguan/Desktop/ESE 345/Project/Project_Final/Project_Final/Project_Final/src/Four_Stage_Pipeline.bde','','');">File <SPAN class=Sccss>C:/Users/Tyguan/Desktop/ESE 345/Project/Project_Final/Project_Final/Project_Final/src/Four_Stage_Pipeline.bde</SPAN> has been successfully generated.</SPAN><BR>
+<SPAN class=Sccss1 onclick="OpenPlugIn('Aldec.BDE.7','0','C:/Users/Tyguan/Desktop/ESE 345/Project/Project_Final/Project_Final/Project_Final/src/Fowarding_Mux.bde','','');">File <SPAN class=Sccss>C:/Users/Tyguan/Desktop/ESE 345/Project/Project_Final/Project_Final/Project_Final/src/Fowarding_Mux.bde</SPAN> has been successfully generated.</SPAN><BR>
+<SPAN class=Sccss1 onclick="OpenPlugIn('Aldec.BDE.7','0','C:/Users/Tyguan/Desktop/ESE 345/Project/Project_Final/Project_Final/Project_Final/src/fowarding_unit.bde','','');">File <SPAN class=Sccss>C:/Users/Tyguan/Desktop/ESE 345/Project/Project_Final/Project_Final/Project_Final/src/fowarding_unit.bde</SPAN> has been successfully generated.</SPAN><BR>
+<SPAN class=Sccss1 onclick="OpenPlugIn('Aldec.BDE.7','0','C:/Users/Tyguan/Desktop/ESE 345/Project/Project_Final/Project_Final/Project_Final/src/Instr_buffer.bde','','');">File <SPAN class=Sccss>C:/Users/Tyguan/Desktop/ESE 345/Project/Project_Final/Project_Final/Project_Final/src/Instr_buffer.bde</SPAN> has been successfully generated.</SPAN><BR>
+<SPAN class=Sccss1 onclick="OpenPlugIn('Aldec.BDE.7','0','C:/Users/Tyguan/Desktop/ESE 345/Project/Project_Final/Project_Final/Project_Final/src/Register_file.bde','','');">File <SPAN class=Sccss>C:/Users/Tyguan/Desktop/ESE 345/Project/Project_Final/Project_Final/Project_Final/src/Register_file.bde</SPAN> has been successfully generated.</SPAN><BR>
+<SPAN class=Info1> </SPAN><BR>
+<SPAN class=Sccss1>6 units converted to Block Diagrams.</SPAN><BR>
+</tt>
+</BODY>
+
+</HTML>

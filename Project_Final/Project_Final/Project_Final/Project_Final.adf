@@ -1,0 +1,81 @@
+[Project]
+Current Flow=Generic
+VCS=0
+version=4
+Current Config=compile
+
+[Configurations]
+compile=project_final
+
+[Library]
+Project_Final=.\Project_Final\Project_Final.lib
+
+[$LibMap$]
+Project_Final=.
+Active_lib=
+
+[Settings]
+FLOW_TYPE=HDL
+LANGUAGE=VHDL
+REFRESH_FLOW=1
+FLOWTOOLS=NONE
+FAMILY=
+fileopenfolder=C:\Users\Tyguan\Desktop\ESE 345\Project\Project_Final\Project_Final\Project_Final\src
+
+[file_out:/..\..\..\..\..\..\..\Downloads\Four_Stage_Pipeline.bde]
+/..\compile\Four_Stage_Pipeline.vhd=-1
+
+[file_out:/alu.bde]
+/..\compile\alu.vhd=-1
+
+[file_out:/Four_Stage_Pipeline.bde]
+/..\compile\Four_Stage_Pipeline.vhd=-1
+
+[file_out:/Fowarding_Mux.bde]
+/..\compile\Fowarding_Mux.vhd=-1
+
+[file_out:/fowarding_unit.bde]
+/..\compile\fowarding_unit.vhd=-1
+
+[file_out:/Instr_buffer.bde]
+/..\compile\Instr_buffer.vhd=-1
+
+[file_out:/Register_file.bde]
+/..\compile\Register_file.vhd=-1
+
+[Files]
+/Reg_File_Mem_Type.vhd=-1
+/Fowarding_Mux.vhd=-1
+/Register_File.vhd=-1
+/Instr_buffer.vhd=-1
+/Fowarding_Unit.vhd=-1
+/alu.vhd=-1
+/Four_Stage_Pipeline.vhd=-1
+/PipeLine_tb.vhd=-1
+/outputFile.txt=-1
+/results.txt=-1
+/Register_File_Report.txt=-1
+/..\..\..\..\..\..\ESE345\Project\Project_Final\Project_Final\Project_Final\src\Final1.asdb=-1
+/..\..\..\..\..\..\ESE345\Project\Project_Final\Project_Final\Project_Final\src\Final1.awc=-1
+
+[Files.Data]
+.\src\Reg_File_Mem_Type.vhd=VHDL Source Code
+.\src\Fowarding_Mux.vhd=VHDL Source Code
+.\src\Register_File.vhd=VHDL Source Code
+.\src\Instr_buffer.vhd=VHDL Source Code
+.\src\Fowarding_Unit.vhd=VHDL Source Code
+.\src\alu.vhd=VHDL Source Code
+.\src\Four_Stage_Pipeline.vhd=VHDL Source Code
+.\src\PipeLine_tb.vhd=VHDL Source Code
+.\src\outputFile.txt=Text File
+.\src\results.txt=Text File
+.\src\Register_File_Report.txt=Text File
+.\..\..\..\..\..\ESE345\Project\Project_Final\Project_Final\Project_Final\src\Final1.asdb=Accelerated Waveform File
+.\..\..\..\..\..\ESE345\Project\Project_Final\Project_Final\Project_Final\src\Final1.awc=Accelerated Waveform Configuration
+
+[SpecTracer]
+WindowVisible=0
+[HierarchyViewer]
+HierarchyInformation=pipeline_tb|behav|0 
+ShowHide=ShowTopLevel
+Selected=

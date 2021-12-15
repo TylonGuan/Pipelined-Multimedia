@@ -1,0 +1,43 @@
+Active-HDL 11.1.262.7351 2021-12-03 12:49:57
+
+Elaboration top modules:
+Architecture                  behav(pipeline_tb)
+
+
+----------------------------------------------------------------------------------------------------------------------
+Entity              | Architecture             | Library       | Info | Compiler Version        | Compilation Options
+----------------------------------------------------------------------------------------------------------------------
+pipeline_tb         | behav                    | project_final |      | 11.1.262.7351 (Windows) | -O3 -2008
+Four_Stage_Pipeline | Four_Stage_Pipeline_arch | project_final |      | 11.1.262.7351 (Windows) | -O3 -2008
+Instr_buffer        | Instr_buffer_arch        | project_final |      | 11.1.262.7351 (Windows) | -O3 -2008
+Register_file       | Register_file_arch       | project_final |      | 11.1.262.7351 (Windows) | -O3 -2008
+alu                 | alu_arch                 | project_final |      | 11.1.262.7351 (Windows) | -O3 -2008
+fowarding_unit      | fowarding_unit_arch      | project_final |      | 11.1.262.7351 (Windows) | -O3 -2008
+Fowarding_Mux       | Fowarding_Mux_arch       | project_final |      | 11.1.262.7351 (Windows) | -O3 -2008
+----------------------------------------------------------------------------------------------------------------------
+
+----------------------------------------------------------------------------------------------------------------------
+VHDL Package                                   | Library       | Info | Compiler Version        | Compilation Options
+----------------------------------------------------------------------------------------------------------------------
+standard                                       | std           |      |                         | <unavailable>
+TEXTIO                                         | std           |      |                         | <unavailable>
+std_logic_1164                                 | ieee          |      |                         | <unavailable>
+NUMERIC_STD                                    | ieee          |      |                         | <unavailable>
+Reg_File_Mem_Type                              | project_final |      |                         | <unavailable>
+ENV                                            | std           |      |                         | <unavailable>
+STD_LOGIC_TEXTIO                               | ieee          |      |                         | <unavailable>
+----------------------------------------------------------------------------------------------------------------------
+
+----------------------------------------------------------------------------------------------------------------------
+Library                                        | Comment
+----------------------------------------------------------------------------------------------------------------------
+ieee                                           | Standard IEEE packages library
+project_final                                  | None
+std                                            | Standard VHDL library
+----------------------------------------------------------------------------------------------------------------------
+
+
+Simulation Options: asim -O5 +access +r +m+pipeline_tb pipeline_tb behav
+
+
+The performance of simulation is reduced. Version Student Edition

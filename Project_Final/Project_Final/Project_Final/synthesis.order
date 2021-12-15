@@ -1,0 +1,10 @@
+i<>.\src\alu.vhd
+i<>.\src\Four_Stage_Pipeline.vhd
+i<>.\src\Fowarding_Unit.vhd
+i<>.\src\Instr_buffer.vhd
+i<>.\src\Register_File.vhd
+i<>.\src\register_lookup.vhd
+i<>.\src\Fowarding_Mux.vhd
+i<>.\src\PipeLine_tb.vhd
+i<>.\src\Register_Memory_Type.cpp
+i<>.\src\Reg_File_Mem_Type.vhd

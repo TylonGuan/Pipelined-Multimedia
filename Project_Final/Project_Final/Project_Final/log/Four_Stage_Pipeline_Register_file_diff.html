@@ -1,0 +1,796 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML>
+
+<!----------------------------------------------------------------------------->
+<!--                          BEGIN HTML HEAD                                -->
+<!--                                                                         -->
+
+<HEAD>
+<TITLE>Compare interfaces - Register_file(Symbol) to Register_file(VHDL Source Code)</TITLE>
+<STYLE>
+* {font-family: sans-serif;}
+.Err	{color:#FF0000;cursor:hand;text-decoration:underline;}
+.Warn	{color:#0000FF;cursor:hand;text-decoration:underline;}
+.Info	{color:#000000;cursor:hand;text-decoration:underline;}
+.Sccss  {color:#009600;cursor:hand;text-decoration:underline;}
+.ErrH	{color:#FF0000;cursor:hand;text-decoration:underline;}
+.WarnH	{color:#0000FF;cursor:hand;text-decoration:underline;}
+.InfoH	{color:#000000;cursor:hand;text-decoration:underline;}
+.Err1	{color:#FF0000;}
+.Warn1	{color:#0000FF;}
+.Info1	{color:#000000;}
+.Sccss1 {color:#009600;}
+</STYLE>
+</HEAD>
+<BODY BGCOLOR="white" TEXT="black" LINK="blue" VLINK="purple" style="background-image:url(file:///C:/Aldec/Active-HDL-Student-Edition/Flows/Res/default.bmp); background-repeat: repeat;">
+<tt>
+<!--                                                                         -->
+<!--                             END HEADER                                  -->
+<!----------------------------------------------------------------------------->
+
+<!----------------------------------------------------------------------------->
+<!--                            BEGIN VBSCRIPT                               -->
+<!--                                                                         -->
+<SCRIPT LANGUAGE=JSCRIPT>
+	function RollOn() {
+		switch(window.event.srcElement.className) {
+			case 'Err':
+				window.event.srcElement.className = 'ErrH'; break;
+			case 'Warn':
+				window.event.srcElement.className = 'WarnH'; break;
+			case 'Info':
+				window.event.srcElement.className = 'InfoH'; break;
+		}
+	}
+	function RollOff() {
+		switch(window.event.srcElement.className) {
+			case 'ErrH':
+				window.event.srcElement.className = 'Err'; break;
+			case 'WarnH':
+				window.event.srcElement.className = 'Warn'; break;
+			case 'InfoH':
+				window.event.srcElement.className = 'Info'; break;
+		}
+	}
+	function OnError(sMsg,sUrl,sLine) {
+		return true;
+	}
+	
+	document.onmouseover = RollOn;
+	document.onmouseout = RollOff;
+	window.onerror = OnError;
+</SCRIPT>
+
+<SCRIPT LANGUAGE=VBSCRIPT>
+
+Function IID_IDispatch
+	IID_IDispatch = "{00020400-0000-0000-C000-000000000046}"
+End Function
+
+Function CLSID_Executor
+	CLSID_Executor = "Aldec.ExePlugIn.Generic.7"
+End Function
+
+
+Sub OpenPlugIn (progid, template, document, element, string)
+
+	Dim executor, command
+
+	Set executor = window.external.aldec.connector.OpenPlugIn(CLSID_Executor, IID_IDispatch)
+
+	command = "?Activate[<"+progid+">][<"+template+">][<"+document+">][<"+element+">][<"+string+">]"
+
+	executor.ExecuteCommand command, ""
+
+End Sub
+
+
+</SCRIPT>
+<!--                                                                         -->
+<!--                             END VBSCRIPT                                -->
+<!----------------------------------------------------------------------------->
+
+<H2>Compare interfaces - Register_file(Symbol) to Register_file(VHDL Source Code)</H2>
+
+Created on Fri 2021-12-03 at 03:16:14
+<hr style="height:2px;border-width:0;color:#008080;background-color:#008080">
+<SPAN class=Info1>Comparing interfaces:</SPAN><BR>
+<SPAN class=Info1>Symbol Register_file.</SPAN><BR>
+<SPAN class=Info1>VHDL Source Code C:/Users/Tyguan/Desktop/ESE 345/Project/Project_Final/Project_Final/Project_Final/src/Register_File.vhd.</SPAN><BR>
+<SPAN class=Warn1>VHDL Source Code cannot be updated.</SPAN><BR>
+<SPAN class=Warn1>Cannot find the comments denoting the location of the automatically maintained section.</SPAN><BR>
+<SPAN class=Info1><br>
+<table style=text-align:center;vertical-align:center;font-size:15px;border-collapse:collapse>
+	<tr>
+		<th style=border-width:2px;border-style:solid;border-color:#0f0f0f;padding:3px colspan=11>Ports
+	</th></tr>
+	<tr style=text-align:center;vertical-align:center;font-size:15px;border-collapse:collapse>
+		<th style=border-width:2px;border-style:solid;border-color:#0f0f0f;padding:3px>Name</th>
+		<th style=border-width:2px;border-style:solid;border-color:#0f0f0f;padding:3px>Range</th>
+		<th style=border-width:2px;border-style:solid;border-color:#0f0f0f;padding:3px>Mode</th>
+		<th style=border-width:2px;border-style:solid;border-color:#0f0f0f;padding:3px>Type</th>
+		<th style=border-width:2px;border-style:solid;border-color:#0f0f0f;padding:3px>Initial Value</th>
+		<th style=border-width:2px;border-style:solid;border-color:#0f0f0f;padding:3px></th>
+		<th style=border-width:2px;border-style:solid;border-color:#0f0f0f;padding:3px>Name</th>
+		<th style=border-width:2px;border-style:solid;border-color:#0f0f0f;padding:3px>Range</th>
+		<th style=border-width:2px;border-style:solid;border-color:#0f0f0f;padding:3px>Mode</th>
+		<th style=border-width:2px;border-style:solid;border-color:#0f0f0f;padding:3px>Type</th>
+		<th style=border-width:2px;border-style:solid;border-color:#0f0f0f;padding:3px>Initial Value</th>
+	</tr>
+	<tr style=background-color:#ffffff;color:#008000>
+		<td style=border-style:solid;border-width:1px;border-color:#7f7f7f;padding:3px>reset</td>
+		<td style=border-style:solid;border-width:1px;border-color:#7f7f7f;padding:3px></td>
+		<td style=border-style:solid;border-width:1px;border-color:#7f7f7f;padding:3px>Input</td>
+		<td style=border-style:solid;border-width:1px;border-color:#7f7f7f;padding:3px>STD_LOGIC</td>
+		<td style=border-style:solid;border-width:1px;border-color:#7f7f7f;padding:3px></td>
+		<td style=border-style:solid;border-width:1px;border-color:#7f7f7f;padding:3px>missing right</td>
+		<td style=border-style:solid;border-width:1px;border-color:#7f7f7f;padding:3px></td>
+		<td style=border-style:solid;border-width:1px;border-color:#7f7f7f;padding:3px></td>
+		<td style=border-style:solid;border-width:1px;border-color:#7f7f7f;padding:3px></td>
+		<td style=border-style:solid;border-width:1px;border-color:#7f7f7f;padding:3px></td>
+		<td style=border-style:solid;border-width:1px;border-color:#7f7f7f;padding:3px></td>
+	</tr>
+	<tr style=background-color:#ffffff;color:#000000>
+		<td style=border-style:solid;border-width:1px;border-color:#7f7f7f;padding:3px>instr</td>
+		<td style=border-style:solid;border-width:1px;border-color:#7f7f7f;padding:3px>(24 downto 0)</td>
+		<td style=border-style:solid;border-width:1px;border-color:#7f7f7f;padding:3px>Input</td>
+		<td style=border-style:solid;border-width:1px;border-color:#7f7f7f;padding:3px>STD_LOGIC_VECTOR</td>
+		<td style=border-style:solid;border-width:1px;border-color:#7f7f7f;padding:3px></td>
+		<td style=border-style:solid;border-width:1px;border-color:#7f7f7f;padding:3px>identical</td>
+		<td style=border-style:solid;border-width:1px;border-color:#7f7f7f;padding:3px>instr</td>
+		<td style=border-style:solid;border-width:1px;border-color:#7f7f7f;padding:3px>(24 downto 0)</td>
+		<td style=border-style:solid;border-width:1px;border-color:#7f7f7f;padding:3px>Input</td>
+		<td style=border-style:solid;border-width:1px;border-color:#7f7f7f;padding:3px>STD_LOGIC_VECTOR</td>
+		<td style=border-style:solid;border-width:1px;border-color:#7f7f7f;padding:3px></td>
+	</tr>
+	<tr style=background-color:#ffffff;color:#000000>
+		<td style=border-style:solid;border-width:1px;border-color:#7f7f7f;padding:3px>write_enable</td>
+		<td style=border-style:solid;border-width:1px;border-color:#7f7f7f;padding:3px></td>
+		<td style=border-style:solid;border-width:1px;border-color:#7f7f7f;padding:3px>Input</td>
+		<td style=border-style:solid;border-width:1px;border-color:#7f7f7f;padding:3px>STD_LOGIC</td>
+		<td style=border-style:solid;border-width:1px;border-color:#7f7f7f;padding:3px></td>
+		<td style=border-style:solid;border-width:1px;border-color:#7f7f7f;padding:3px>identical</td>
+		<td style=border-style:solid;border-width:1px;border-color:#7f7f7f;padding:3px>write_enable</td>
+		<td style=border-style:solid;border-width:1px;border-color:#7f7f7f;padding:3px></td>
+		<td style=border-style:solid;border-width:1px;border-color:#7f7f7f;padding:3px>Input</td>
+		<td style=border-style:solid;border-width:1px;border-color:#7f7f7f;padding:3px>STD_LOGIC</td>
+		<td style=border-style:solid;border-width:1px;border-color:#7f7f7f;padding:3px></td>
+	</tr>
+	<tr style=background-color:#ffffff;color:#000000>
+		<td style=border-style:solid;border-width:1px;border-color:#7f7f7f;padding:3px>rd_address_WB</td>
+		<td style=border-style:solid;border-width:1px;border-color:#7f7f7f;padding:3px>(4 downto 0)</td>
+		<td style=border-style:solid;border-width:1px;border-color:#7f7f7f;padding:3px>Input</td>
+		<td style=border-style:solid;border-width:1px;border-color:#7f7f7f;padding:3px>STD_LOGIC_VECTOR</td>
+		<td style=border-style:solid;border-width:1px;border-color:#7f7f7f;padding:3px></td>
+		<td style=border-style:solid;border-width:1px;border-color:#7f7f7f;padding:3px>identical</td>
+		<td style=border-style:solid;border-width:1px;border-color:#7f7f7f;padding:3px>rd_address_WB</td>
+		<td style=border-style:solid;border-width:1px;border-color:#7f7f7f;padding:3px>(4 downto 0)</td>
+		<td style=border-style:solid;border-width:1px;border-color:#7f7f7f;padding:3px>Input</td>
+		<td style=border-style:solid;border-width:1px;border-color:#7f7f7f;padding:3px>STD_LOGIC_VECTOR</td>
+		<td style=border-style:solid;border-width:1px;border-color:#7f7f7f;padding:3px></td>
+	</tr>
+	<tr style=background-color:#ffffff;color:#000000>
+		<td style=border-style:solid;border-width:1px;border-color:#7f7f7f;padding:3px>rd</td>
+		<td style=border-style:solid;border-width:1px;border-color:#7f7f7f;padding:3px>(127 downto 0)</td>
+		<td style=border-style:solid;border-width:1px;border-color:#7f7f7f;padding:3px>Input</td>
+		<td style=border-style:solid;border-width:1px;border-color:#7f7f7f;padding:3px>STD_LOGIC_VECTOR</td>
+		<td style=border-style:solid;border-width:1px;border-color:#7f7f7f;padding:3px></td>
+		<td style=border-style:solid;border-width:1px;border-color:#7f7f7f;padding:3px>identical</td>
+		<td style=border-style:solid;border-width:1px;border-color:#7f7f7f;padding:3px>rd</td>
+		<td style=border-style:solid;border-width:1px;border-color:#7f7f7f;padding:3px>(127 downto 0)</td>
+		<td style=border-style:solid;border-width:1px;border-color:#7f7f7f;padding:3px>Input</td>
+		<td style=border-style:solid;border-width:1px;border-color:#7f7f7f;padding:3px>STD_LOGIC_VECTOR</td>
+		<td style=border-style:solid;border-width:1px;border-color:#7f7f7f;padding:3px></td>
+	</tr>
+	<tr style=background-color:#ffffff;color:#000000>
+		<td style=border-style:solid;border-width:1px;border-color:#7f7f7f;padding:3px>clk</td>
+		<td style=border-style:solid;border-width:1px;border-color:#7f7f7f;padding:3px></td>
+		<td style=border-style:solid;border-width:1px;border-color:#7f7f7f;padding:3px>Input</td>
+		<td style=border-style:solid;border-width:1px;border-color:#7f7f7f;padding:3px>STD_LOGIC</td>
+		<td style=border-style:solid;border-width:1px;border-color:#7f7f7f;padding:3px></td>
+		<td style=border-style:solid;border-width:1px;border-color:#7f7f7f;padding:3px>identical</td>
+		<td style=border-style:solid;border-width:1px;border-color:#7f7f7f;padding:3px>clk</td>
+		<td style=border-style:solid;border-width:1px;border-color:#7f7f7f;padding:3px></td>
+		<td style=border-style:solid;border-width:1px;border-color:#7f7f7f;padding:3px>Input</td>
+		<td style=border-style:solid;border-width:1px;border-color:#7f7f7f;padding:3px>STD_LOGIC</td>
+		<td style=border-style:solid;border-width:1px;border-color:#7f7f7f;padding:3px></td>
+	</tr>
+	<tr style=background-color:#ffffff;color:#000000>
+		<td style=border-style:solid;border-width:1px;border-color:#7f7f7f;padding:3px>rs1_address</td>
+		<td style=border-style:solid;border-width:1px;border-color:#7f7f7f;padding:3px>(4 downto 0)</td>
+		<td style=border-style:solid;border-width:1px;border-color:#7f7f7f;padding:3px>Output</td>
+		<td style=border-style:solid;border-width:1px;border-color:#7f7f7f;padding:3px>STD_LOGIC_VECTOR</td>
+		<td style=border-style:solid;border-width:1px;border-color:#7f7f7f;padding:3px></td>
+		<td style=border-style:solid;border-width:1px;border-color:#7f7f7f;padding:3px>identical</td>
+		<td style=border-style:solid;border-width:1px;border-color:#7f7f7f;padding:3px>rs1_address</td>
+		<td style=border-style:solid;border-width:1px;border-color:#7f7f7f;padding:3px>(4 downto 0)</td>
+		<td style=border-style:solid;border-width:1px;border-color:#7f7f7f;padding:3px>Output</td>
+		<td style=border-style:solid;border-width:1px;border-color:#7f7f7f;padding:3px>STD_LOGIC_VECTOR</td>
+		<td style=border-style:solid;border-width:1px;border-color:#7f7f7f;padding:3px></td>
+	</tr>
+	<tr style=background-color:#ffffff;color:#000000>
+		<td style=border-style:solid;border-width:1px;border-color:#7f7f7f;padding:3px>rs2_address</td>
+		<td style=border-style:solid;border-width:1px;border-color:#7f7f7f;padding:3px>(4 downto 0)</td>
+		<td style=border-style:solid;border-width:1px;border-color:#7f7f7f;padding:3px>Output</td>
+		<td style=border-style:solid;border-width:1px;border-color:#7f7f7f;padding:3px>STD_LOGIC_VECTOR</td>
+		<td style=border-style:solid;border-width:1px;border-color:#7f7f7f;padding:3px></td>
+		<td style=border-style:solid;border-width:1px;border-color:#7f7f7f;padding:3px>identical</td>
+		<td style=border-style:solid;border-width:1px;border-color:#7f7f7f;padding:3px>rs2_address</td>
+		<td style=border-style:solid;border-width:1px;border-color:#7f7f7f;padding:3px>(4 downto 0)</td>
+		<td style=border-style:solid;border-width:1px;border-color:#7f7f7f;padding:3px>Output</td>
+		<td style=border-style:solid;border-width:1px;border-color:#7f7f7f;padding:3px>STD_LOGIC_VECTOR</td>
+		<td style=border-style:solid;border-width:1px;border-color:#7f7f7f;padding:3px></td>
+	</tr>
+	<tr style=background-color:#ffffff;color:#000000>
+		<td style=border-style:solid;border-width:1px;border-color:#7f7f7f;padding:3px>rs3_address</td>
+		<td style=border-style:solid;border-width:1px;border-color:#7f7f7f;padding:3px>(4 downto 0)</td>
+		<td style=border-style:solid;border-width:1px;border-color:#7f7f7f;padding:3px>Output</td>
+		<td style=border-style:solid;border-width:1px;border-color:#7f7f7f;padding:3px>STD_LOGIC_VECTOR</td>
+		<td style=border-style:solid;border-width:1px;border-color:#7f7f7f;padding:3px></td>
+		<td style=border-style:solid;border-width:1px;border-color:#7f7f7f;padding:3px>identical</td>
+		<td style=border-style:solid;border-width:1px;border-color:#7f7f7f;padding:3px>rs3_address</td>
+		<td style=border-style:solid;border-width:1px;border-color:#7f7f7f;padding:3px>(4 downto 0)</td>
+		<td style=border-style:solid;border-width:1px;border-color:#7f7f7f;padding:3px>Output</td>
+		<td style=border-style:solid;border-width:1px;border-color:#7f7f7f;padding:3px>STD_LOGIC_VECTOR</td>
+		<td style=border-style:solid;border-width:1px;border-color:#7f7f7f;padding:3px></td>
+	</tr>
+	<tr style=background-color:#ffffff;color:#000000>
+		<td style=border-style:solid;border-width:1px;border-color:#7f7f7f;padding:3px>rd_address</td>
+		<td style=border-style:solid;border-width:1px;border-color:#7f7f7f;padding:3px>(4 downto 0)</td>
+		<td style=border-style:solid;border-width:1px;border-color:#7f7f7f;padding:3px>Output</td>
+		<td style=border-style:solid;border-width:1px;border-color:#7f7f7f;padding:3px>STD_LOGIC_VECTOR</td>
+		<td style=border-style:solid;border-width:1px;border-color:#7f7f7f;padding:3px></td>
+		<td style=border-style:solid;border-width:1px;border-color:#7f7f7f;padding:3px>identical</td>
+		<td style=border-style:solid;border-width:1px;border-color:#7f7f7f;padding:3px>rd_address</td>
+		<td style=border-style:solid;border-width:1px;border-color:#7f7f7f;padding:3px>(4 downto 0)</td>
+		<td style=border-style:solid;border-width:1px;border-color:#7f7f7f;padding:3px>Output</td>
+		<td style=border-style:solid;border-width:1px;border-color:#7f7f7f;padding:3px>STD_LOGIC_VECTOR</td>
+		<td style=border-style:solid;border-width:1px;border-color:#7f7f7f;padding:3px></td>
+	</tr>
+	<tr style=background-color:#ffffff;color:#000000>
+		<td style=border-style:solid;border-width:1px;border-color:#7f7f7f;padding:3px>instr_out</td>
+		<td style=border-style:solid;border-width:1px;border-color:#7f7f7f;padding:3px>(24 downto 0)</td>
+		<td style=border-style:solid;border-width:1px;border-color:#7f7f7f;padding:3px>Output</td>
+		<td style=border-style:solid;border-width:1px;border-color:#7f7f7f;padding:3px>STD_LOGIC_VECTOR</td>
+		<td style=border-style:solid;border-width:1px;border-color:#7f7f7f;padding:3px></td>
+		<td style=border-style:solid;border-width:1px;border-color:#7f7f7f;padding:3px>identical</td>
+		<td style=border-style:solid;border-width:1px;border-color:#7f7f7f;padding:3px>instr_out</td>
+		<td style=border-style:solid;border-width:1px;border-color:#7f7f7f;padding:3px>(24 downto 0)</td>
+		<td style=border-style:solid;border-width:1px;border-color:#7f7f7f;padding:3px>Output</td>
+		<td style=border-style:solid;border-width:1px;border-color:#7f7f7f;padding:3px>STD_LOGIC_VECTOR</td>
+		<td style=border-style:solid;border-width:1px;border-color:#7f7f7f;padding:3px></td>
+	</tr>
+	<tr style=background-color:#ffffff;color:#000000>
+		<td style=border-style:solid;border-width:1px;border-color:#7f7f7f;padding:3px>opcode_out</td>
+		<td style=border-style:solid;border-width:1px;border-color:#7f7f7f;padding:3px>(9 downto 0)</td>
+		<td style=border-style:solid;border-width:1px;border-color:#7f7f7f;padding:3px>Output</td>
+		<td style=border-style:solid;border-width:1px;border-color:#7f7f7f;padding:3px>STD_LOGIC_VECTOR</td>
+		<td style=border-style:solid;border-width:1px;border-color:#7f7f7f;padding:3px></td>
+		<td style=border-style:solid;border-width:1px;border-color:#7f7f7f;padding:3px>identical</td>
+		<td style=border-style:solid;border-width:1px;border-color:#7f7f7f;padding:3px>opcode_out</td>
+		<td style=border-style:solid;border-width:1px;border-color:#7f7f7f;padding:3px>(9 downto 0)</td>
+		<td style=border-style:solid;border-width:1px;border-color:#7f7f7f;padding:3px>Output</td>
+		<td style=border-style:solid;border-width:1px;border-color:#7f7f7f;padding:3px>STD_LOGIC_VECTOR</td>
+		<td style=border-style:solid;border-width:1px;border-color:#7f7f7f;padding:3px></td>
+	</tr>
+	<tr style=background-color:#ffffff;color:#000000>
+		<td style=border-style:solid;border-width:1px;border-color:#7f7f7f;padding:3px>write_enable_out</td>
+		<td style=border-style:solid;border-width:1px;border-color:#7f7f7f;padding:3px></td>
+		<td style=border-style:solid;border-width:1px;border-color:#7f7f7f;padding:3px>Output</td>
+		<td style=border-style:solid;border-width:1px;border-color:#7f7f7f;padding:3px>STD_LOGIC</td>
+		<td style=border-style:solid;border-width:1px;border-color:#7f7f7f;padding:3px></td>
+		<td style=border-style:solid;border-width:1px;border-color:#7f7f7f;padding:3px>identical</td>
+		<td style=border-style:solid;border-width:1px;border-color:#7f7f7f;padding:3px>write_enable_out</td>
+		<td style=border-style:solid;border-width:1px;border-color:#7f7f7f;padding:3px></td>
+		<td style=border-style:solid;border-width:1px;border-color:#7f7f7f;padding:3px>Output</td>
+		<td style=border-style:solid;border-width:1px;border-color:#7f7f7f;padding:3px>STD_LOGIC</td>
+		<td style=border-style:solid;border-width:1px;border-color:#7f7f7f;padding:3px></td>
+	</tr>
+	<tr style=background-color:#ffffff;color:#000000>
+		<td style=border-style:solid;border-width:1px;border-color:#7f7f7f;padding:3px>rd_WB_out</td>
+		<td style=border-style:solid;border-width:1px;border-color:#7f7f7f;padding:3px>(127 downto 0)</td>
+		<td style=border-style:solid;border-width:1px;border-color:#7f7f7f;padding:3px>Output</td>
+		<td style=border-style:solid;border-width:1px;border-color:#7f7f7f;padding:3px>STD_LOGIC_VECTOR</td>
+		<td style=border-style:solid;border-width:1px;border-color:#7f7f7f;padding:3px></td>
+		<td style=border-style:solid;border-width:1px;border-color:#7f7f7f;padding:3px>identical</td>
+		<td style=border-style:solid;border-width:1px;border-color:#7f7f7f;padding:3px>rd_WB_out</td>
+		<td style=border-style:solid;border-width:1px;border-color:#7f7f7f;padding:3px>(127 downto 0)</td>
+		<td style=border-style:solid;border-width:1px;border-color:#7f7f7f;padding:3px>Output</td>
+		<td style=border-style:solid;border-width:1px;border-color:#7f7f7f;padding:3px>STD_LOGIC_VECTOR</td>
+		<td style=border-style:solid;border-width:1px;border-color:#7f7f7f;padding:3px></td>
+	</tr>
+	<tr style=background-color:#ffffff;color:#000000>
+		<td style=border-style:solid;border-width:1px;border-color:#7f7f7f;padding:3px>rd_address_WB_out</td>
+		<td style=border-style:solid;border-width:1px;border-color:#7f7f7f;padding:3px>(4 downto 0)</td>
+		<td style=border-style:solid;border-width:1px;border-color:#7f7f7f;padding:3px>Output</td>
+		<td style=border-style:solid;border-width:1px;border-color:#7f7f7f;padding:3px>STD_LOGIC_VECTOR</td>
+		<td style=border-style:solid;border-width:1px;border-color:#7f7f7f;padding:3px></td>
+		<td style=border-style:solid;border-width:1px;border-color:#7f7f7f;padding:3px>identical</td>
+		<td style=border-style:solid;border-width:1px;border-color:#7f7f7f;padding:3px>rd_address_WB_out</td>
+		<td style=border-style:solid;border-width:1px;border-color:#7f7f7f;padding:3px>(4 downto 0)</td>
+		<td style=border-style:solid;border-width:1px;border-color:#7f7f7f;padding:3px>Output</td>
+		<td style=border-style:solid;border-width:1px;border-color:#7f7f7f;padding:3px>STD_LOGIC_VECTOR</td>
+		<td style=border-style:solid;border-width:1px;border-color:#7f7f7f;padding:3px></td>
+	</tr>
+	<tr style=background-color:#ffffff;color:#000000>
+		<td style=border-style:solid;border-width:1px;border-color:#7f7f7f;padding:3px>rs1_address_out</td>
+		<td style=border-style:solid;border-width:1px;border-color:#7f7f7f;padding:3px>(4 downto 0)</td>
+		<td style=border-style:solid;border-width:1px;border-color:#7f7f7f;padding:3px>Output</td>
+		<td style=border-style:solid;border-width:1px;border-color:#7f7f7f;padding:3px>STD_LOGIC_VECTOR</td>
+		<td style=border-style:solid;border-width:1px;border-color:#7f7f7f;padding:3px></td>
+		<td style=border-style:solid;border-width:1px;border-color:#7f7f7f;padding:3px>identical</td>
+		<td style=border-style:solid;border-width:1px;border-color:#7f7f7f;padding:3px>rs1_address_out</td>
+		<td style=border-style:solid;border-width:1px;border-color:#7f7f7f;padding:3px>(4 downto 0)</td>
+		<td style=border-style:solid;border-width:1px;border-color:#7f7f7f;padding:3px>Output</td>
+		<td style=border-style:solid;border-width:1px;border-color:#7f7f7f;padding:3px>STD_LOGIC_VECTOR</td>
+		<td style=border-style:solid;border-width:1px;border-color:#7f7f7f;padding:3px></td>
+	</tr>
+	<tr style=background-color:#ffffff;color:#000000>
+		<td style=border-style:solid;border-width:1px;border-color:#7f7f7f;padding:3px>rs2_address_out</td>
+		<td style=border-style:solid;border-width:1px;border-color:#7f7f7f;padding:3px>(4 downto 0)</td>
+		<td style=border-style:solid;border-width:1px;border-color:#7f7f7f;padding:3px>Output</td>
+		<td style=border-style:solid;border-width:1px;border-color:#7f7f7f;padding:3px>STD_LOGIC_VECTOR</td>
+		<td style=border-style:solid;border-width:1px;border-color:#7f7f7f;padding:3px></td>
+		<td style=border-style:solid;border-width:1px;border-color:#7f7f7f;padding:3px>identical</td>
+		<td style=border-style:solid;border-width:1px;border-color:#7f7f7f;padding:3px>rs2_address_out</td>
+		<td style=border-style:solid;border-width:1px;border-color:#7f7f7f;padding:3px>(4 downto 0)</td>
+		<td style=border-style:solid;border-width:1px;border-color:#7f7f7f;padding:3px>Output</td>
+		<td style=border-style:solid;border-width:1px;border-color:#7f7f7f;padding:3px>STD_LOGIC_VECTOR</td>
+		<td style=border-style:solid;border-width:1px;border-color:#7f7f7f;padding:3px></td>
+	</tr>
+	<tr style=background-color:#ffffff;color:#000000>
+		<td style=border-style:solid;border-width:1px;border-color:#7f7f7f;padding:3px>rs3_address_out</td>
+		<td style=border-style:solid;border-width:1px;border-color:#7f7f7f;padding:3px>(4 downto 0)</td>
+		<td style=border-style:solid;border-width:1px;border-color:#7f7f7f;padding:3px>Output</td>
+		<td style=border-style:solid;border-width:1px;border-color:#7f7f7f;padding:3px>STD_LOGIC_VECTOR</td>
+		<td style=border-style:solid;border-width:1px;border-color:#7f7f7f;padding:3px></td>
+		<td style=border-style:solid;border-width:1px;border-color:#7f7f7f;padding:3px>identical</td>
+		<td style=border-style:solid;border-width:1px;border-color:#7f7f7f;padding:3px>rs3_address_out</td>
+		<td style=border-style:solid;border-width:1px;border-color:#7f7f7f;padding:3px>(4 downto 0)</td>
+		<td style=border-style:solid;border-width:1px;border-color:#7f7f7f;padding:3px>Output</td>
+		<td style=border-style:solid;border-width:1px;border-color:#7f7f7f;padding:3px>STD_LOGIC_VECTOR</td>
+		<td style=border-style:solid;border-width:1px;border-color:#7f7f7f;padding:3px></td>
+	</tr>
+	<tr style=background-color:#ffffff;color:#000000>
+		<td style=border-style:solid;border-width:1px;border-color:#7f7f7f;padding:3px>rd_address_out</td>
+		<td style=border-style:solid;border-width:1px;border-color:#7f7f7f;padding:3px>(4 downto 0)</td>
+		<td style=border-style:solid;border-width:1px;border-color:#7f7f7f;padding:3px>Output</td>
+		<td style=border-style:solid;border-width:1px;border-color:#7f7f7f;padding:3px>STD_LOGIC_VECTOR</td>
+		<td style=border-style:solid;border-width:1px;border-color:#7f7f7f;padding:3px></td>
+		<td style=border-style:solid;border-width:1px;border-color:#7f7f7f;padding:3px>identical</td>
+		<td style=border-style:solid;border-width:1px;border-color:#7f7f7f;padding:3px>rd_address_out</td>
+		<td style=border-style:solid;border-width:1px;border-color:#7f7f7f;padding:3px>(4 downto 0)</td>
+		<td style=border-style:solid;border-width:1px;border-color:#7f7f7f;padding:3px>Output</td>
+		<td style=border-style:solid;border-width:1px;border-color:#7f7f7f;padding:3px>STD_LOGIC_VECTOR</td>
+		<td style=border-style:solid;border-width:1px;border-color:#7f7f7f;padding:3px></td>
+	</tr>
+	<tr style=background-color:#ffffff;color:#000000>
+		<td style=border-style:solid;border-width:1px;border-color:#7f7f7f;padding:3px>rs1_data_out</td>
+		<td style=border-style:solid;border-width:1px;border-color:#7f7f7f;padding:3px>(127 downto 0)</td>
+		<td style=border-style:solid;border-width:1px;border-color:#7f7f7f;padding:3px>Output</td>
+		<td style=border-style:solid;border-width:1px;border-color:#7f7f7f;padding:3px>STD_LOGIC_VECTOR</td>
+		<td style=border-style:solid;border-width:1px;border-color:#7f7f7f;padding:3px></td>
+		<td style=border-style:solid;border-width:1px;border-color:#7f7f7f;padding:3px>identical</td>
+		<td style=border-style:solid;border-width:1px;border-color:#7f7f7f;padding:3px>rs1_data_out</td>
+		<td style=border-style:solid;border-width:1px;border-color:#7f7f7f;padding:3px>(127 downto 0)</td>
+		<td style=border-style:solid;border-width:1px;border-color:#7f7f7f;padding:3px>Output</td>
+		<td style=border-style:solid;border-width:1px;border-color:#7f7f7f;padding:3px>STD_LOGIC_VECTOR</td>
+		<td style=border-style:solid;border-width:1px;border-color:#7f7f7f;padding:3px></td>
+	</tr>
+	<tr style=background-color:#ffffff;color:#000000>
+		<td style=border-style:solid;border-width:1px;border-color:#7f7f7f;padding:3px>rs2_data_out</td>
+		<td style=border-style:solid;border-width:1px;border-color:#7f7f7f;padding:3px>(127 downto 0)</td>
+		<td style=border-style:solid;border-width:1px;border-color:#7f7f7f;padding:3px>Output</td>
+		<td style=border-style:solid;border-width:1px;border-color:#7f7f7f;padding:3px>STD_LOGIC_VECTOR</td>
+		<td style=border-style:solid;border-width:1px;border-color:#7f7f7f;padding:3px></td>
+		<td style=border-style:solid;border-width:1px;border-color:#7f7f7f;padding:3px>identical</td>
+		<td style=border-style:solid;border-width:1px;border-color:#7f7f7f;padding:3px>rs2_data_out</td>
+		<td style=border-style:solid;border-width:1px;border-color:#7f7f7f;padding:3px>(127 downto 0)</td>
+		<td style=border-style:solid;border-width:1px;border-color:#7f7f7f;padding:3px>Output</td>
+		<td style=border-style:solid;border-width:1px;border-color:#7f7f7f;padding:3px>STD_LOGIC_VECTOR</td>
+		<td style=border-style:solid;border-width:1px;border-color:#7f7f7f;padding:3px></td>
+	</tr>
+	<tr style=background-color:#ffffff;color:#000000>
+		<td style=border-style:solid;border-width:1px;border-color:#7f7f7f;padding:3px>rs3_data_out</td>
+		<td style=border-style:solid;border-width:1px;border-color:#7f7f7f;padding:3px>(127 downto 0)</td>
+		<td style=border-style:solid;border-width:1px;border-color:#7f7f7f;padding:3px>Output</td>
+		<td style=border-style:solid;border-width:1px;border-color:#7f7f7f;padding:3px>STD_LOGIC_VECTOR</td>
+		<td style=border-style:solid;border-width:1px;border-color:#7f7f7f;padding:3px></td>
+		<td style=border-style:solid;border-width:1px;border-color:#7f7f7f;padding:3px>identical</td>
+		<td style=border-style:solid;border-width:1px;border-color:#7f7f7f;padding:3px>rs3_data_out</td>
+		<td style=border-style:solid;border-width:1px;border-color:#7f7f7f;padding:3px>(127 downto 0)</td>
+		<td style=border-style:solid;border-width:1px;border-color:#7f7f7f;padding:3px>Output</td>
+		<td style=border-style:solid;border-width:1px;border-color:#7f7f7f;padding:3px>STD_LOGIC_VECTOR</td>
+		<td style=border-style:solid;border-width:1px;border-color:#7f7f7f;padding:3px></td>
+	</tr>
+	<tr style=background-color:#ffffff;color:#000000>
+		<td style=border-style:solid;border-width:1px;border-color:#7f7f7f;padding:3px>rd_data_out</td>
+		<td style=border-style:solid;border-width:1px;border-color:#7f7f7f;padding:3px>(127 downto 0)</td>
+		<td style=border-style:solid;border-width:1px;border-color:#7f7f7f;padding:3px>Output</td>
+		<td style=border-style:solid;border-width:1px;border-color:#7f7f7f;padding:3px>STD_LOGIC_VECTOR</td>
+		<td style=border-style:solid;border-width:1px;border-color:#7f7f7f;padding:3px></td>
+		<td style=border-style:solid;border-width:1px;border-color:#7f7f7f;padding:3px>identical</td>
+		<td style=border-style:solid;border-width:1px;border-color:#7f7f7f;padding:3px>rd_data_out</td>
+		<td style=border-style:solid;border-width:1px;border-color:#7f7f7f;padding:3px>(127 downto 0)</td>
+		<td style=border-style:solid;border-width:1px;border-color:#7f7f7f;padding:3px>Output</td>
+		<td style=border-style:solid;border-width:1px;border-color:#7f7f7f;padding:3px>STD_LOGIC_VECTOR</td>
+		<td style=border-style:solid;border-width:1px;border-color:#7f7f7f;padding:3px></td>
+	</tr>
+	<tr style=background-color:#ffffff;color:#000000>
+		<td style=border-style:solid;border-width:1px;border-color:#7f7f7f;padding:3px>opcode</td>
+		<td style=border-style:solid;border-width:1px;border-color:#7f7f7f;padding:3px>(9 downto 0)</td>
+		<td style=border-style:solid;border-width:1px;border-color:#7f7f7f;padding:3px>Output</td>
+		<td style=border-style:solid;border-width:1px;border-color:#7f7f7f;padding:3px>STD_LOGIC_VECTOR</td>
+		<td style=border-style:solid;border-width:1px;border-color:#7f7f7f;padding:3px></td>
+		<td style=border-style:solid;border-width:1px;border-color:#7f7f7f;padding:3px>identical</td>
+		<td style=border-style:solid;border-width:1px;border-color:#7f7f7f;padding:3px>opcode</td>
+		<td style=border-style:solid;border-width:1px;border-color:#7f7f7f;padding:3px>(9 downto 0)</td>
+		<td style=border-style:solid;border-width:1px;border-color:#7f7f7f;padding:3px>Output</td>
+		<td style=border-style:solid;border-width:1px;border-color:#7f7f7f;padding:3px>STD_LOGIC_VECTOR</td>
+		<td style=border-style:solid;border-width:1px;border-color:#7f7f7f;padding:3px></td>
+	</tr>
+	<tr style=background-color:#ffffff;color:#000000>
+		<td style=border-style:solid;border-width:1px;border-color:#7f7f7f;padding:3px>rs1</td>
+		<td style=border-style:solid;border-width:1px;border-color:#7f7f7f;padding:3px>(127 downto 0)</td>
+		<td style=border-style:solid;border-width:1px;border-color:#7f7f7f;padding:3px>Inout</td>
+		<td style=border-style:solid;border-width:1px;border-color:#7f7f7f;padding:3px>STD_LOGIC_VECTOR</td>
+		<td style=border-style:solid;border-width:1px;border-color:#7f7f7f;padding:3px></td>
+		<td style=border-style:solid;border-width:1px;border-color:#7f7f7f;padding:3px>identical</td>
+		<td style=border-style:solid;border-width:1px;border-color:#7f7f7f;padding:3px>rs1</td>
+		<td style=border-style:solid;border-width:1px;border-color:#7f7f7f;padding:3px>(127 downto 0)</td>
+		<td style=border-style:solid;border-width:1px;border-color:#7f7f7f;padding:3px>Inout</td>
+		<td style=border-style:solid;border-width:1px;border-color:#7f7f7f;padding:3px>STD_LOGIC_VECTOR</td>
+		<td style=border-style:solid;border-width:1px;border-color:#7f7f7f;padding:3px></td>
+	</tr>
+	<tr style=background-color:#ffffff;color:#000000>
+		<td style=border-style:solid;border-width:1px;border-color:#7f7f7f;padding:3px>rs2</td>
+		<td style=border-style:solid;border-width:1px;border-color:#7f7f7f;padding:3px>(127 downto 0)</td>
+		<td style=border-style:solid;border-width:1px;border-color:#7f7f7f;padding:3px>Inout</td>
+		<td style=border-style:solid;border-width:1px;border-color:#7f7f7f;padding:3px>STD_LOGIC_VECTOR</td>
+		<td style=border-style:solid;border-width:1px;border-color:#7f7f7f;padding:3px></td>
+		<td style=border-style:solid;border-width:1px;border-color:#7f7f7f;padding:3px>identical</td>
+		<td style=border-style:solid;border-width:1px;border-color:#7f7f7f;padding:3px>rs2</td>
+		<td style=border-style:solid;border-width:1px;border-color:#7f7f7f;padding:3px>(127 downto 0)</td>
+		<td style=border-style:solid;border-width:1px;border-color:#7f7f7f;padding:3px>Inout</td>
+		<td style=border-style:solid;border-width:1px;border-color:#7f7f7f;padding:3px>STD_LOGIC_VECTOR</td>
+		<td style=border-style:solid;border-width:1px;border-color:#7f7f7f;padding:3px></td>
+	</tr>
+	<tr style=background-color:#ffffff;color:#000000>
+		<td style=border-style:solid;border-width:1px;border-color:#7f7f7f;padding:3px>rs3</td>
+		<td style=border-style:solid;border-width:1px;border-color:#7f7f7f;padding:3px>(127 downto 0)</td>
+		<td style=border-style:solid;border-width:1px;border-color:#7f7f7f;padding:3px>Inout</td>
+		<td style=border-style:solid;border-width:1px;border-color:#7f7f7f;padding:3px>STD_LOGIC_VECTOR</td>
+		<td style=border-style:solid;border-width:1px;border-color:#7f7f7f;padding:3px></td>
+		<td style=border-style:solid;border-width:1px;border-color:#7f7f7f;padding:3px>identical</td>
+		<td style=border-style:solid;border-width:1px;border-color:#7f7f7f;padding:3px>rs3</td>
+		<td style=border-style:solid;border-width:1px;border-color:#7f7f7f;padding:3px>(127 downto 0)</td>
+		<td style=border-style:solid;border-width:1px;border-color:#7f7f7f;padding:3px>Inout</td>
+		<td style=border-style:solid;border-width:1px;border-color:#7f7f7f;padding:3px>STD_LOGIC_VECTOR</td>
+		<td style=border-style:solid;border-width:1px;border-color:#7f7f7f;padding:3px></td>
+	</tr>
+	<tr style=background-color:#ffffff;color:#008000>
+		<td style=border-style:solid;border-width:1px;border-color:#7f7f7f;padding:3px></td>
+		<td style=border-style:solid;border-width:1px;border-color:#7f7f7f;padding:3px></td>
+		<td style=border-style:solid;border-width:1px;border-color:#7f7f7f;padding:3px></td>
+		<td style=border-style:solid;border-width:1px;border-color:#7f7f7f;padding:3px></td>
+		<td style=border-style:solid;border-width:1px;border-color:#7f7f7f;padding:3px></td>
+		<td style=border-style:solid;border-width:1px;border-color:#7f7f7f;padding:3px>missing left</td>
+		<td style=border-style:solid;border-width:1px;border-color:#7f7f7f;padding:3px>instr_toFoward</td>
+		<td style=border-style:solid;border-width:1px;border-color:#7f7f7f;padding:3px>(24 downto 0)</td>
+		<td style=border-style:solid;border-width:1px;border-color:#7f7f7f;padding:3px>Output</td>
+		<td style=border-style:solid;border-width:1px;border-color:#7f7f7f;padding:3px>STD_LOGIC_VECTOR</td>
+		<td style=border-style:solid;border-width:1px;border-color:#7f7f7f;padding:3px></td>
+	</tr>
+</table>
+<br>
+<table style=text-align:center;vertical-align:center;font-size:15px;border-collapse:collapse>
+	<tr>
+		<th style=border-width:2px;border-style:solid;border-color:#0f0f0f;padding:3px colspan=9>Generics
+	</th></tr>
+	<tr style=text-align:center;vertical-align:center;font-size:15px;border-collapse:collapse>
+		<th style=border-width:2px;border-style:solid;border-color:#0f0f0f;padding:3px>Name</th>
+		<th style=border-width:2px;border-style:solid;border-color:#0f0f0f;padding:3px>Range</th>
+		<th style=border-width:2px;border-style:solid;border-color:#0f0f0f;padding:3px>Type</th>
+		<th style=border-width:2px;border-style:solid;border-color:#0f0f0f;padding:3px>Initial Value</th>
+		<th style=border-width:2px;border-style:solid;border-color:#0f0f0f;padding:3px></th>
+		<th style=border-width:2px;border-style:solid;border-color:#0f0f0f;padding:3px>Name</th>
+		<th style=border-width:2px;border-style:solid;border-color:#0f0f0f;padding:3px>Range</th>
+		<th style=border-width:2px;border-style:solid;border-color:#0f0f0f;padding:3px>Type</th>
+		<th style=border-width:2px;border-style:solid;border-color:#0f0f0f;padding:3px>Initial Value</th>
+	</tr>
+	<tr style=background-color:#ffffff;color:#000000>
+		<td style=border-style:solid;border-width:1px;border-color:#7f7f7f;padding:3px>REGISTER_INDEX</td>
+		<td style=border-style:solid;border-width:1px;border-color:#7f7f7f;padding:3px></td>
+		<td style=border-style:solid;border-width:1px;border-color:#7f7f7f;padding:3px>INTEGER</td>
+		<td style=border-style:solid;border-width:1px;border-color:#7f7f7f;padding:3px>5</td>
+		<td style=border-style:solid;border-width:1px;border-color:#7f7f7f;padding:3px>identical</td>
+		<td style=border-style:solid;border-width:1px;border-color:#7f7f7f;padding:3px>REGISTER_INDEX</td>
+		<td style=border-style:solid;border-width:1px;border-color:#7f7f7f;padding:3px></td>
+		<td style=border-style:solid;border-width:1px;border-color:#7f7f7f;padding:3px>INTEGER</td>
+		<td style=border-style:solid;border-width:1px;border-color:#7f7f7f;padding:3px>5</td>
+	</tr>
+	<tr style=background-color:#ffffff;color:#000000>
+		<td style=border-style:solid;border-width:1px;border-color:#7f7f7f;padding:3px>DATA_WIDTH</td>
+		<td style=border-style:solid;border-width:1px;border-color:#7f7f7f;padding:3px></td>
+		<td style=border-style:solid;border-width:1px;border-color:#7f7f7f;padding:3px>INTEGER</td>
+		<td style=border-style:solid;border-width:1px;border-color:#7f7f7f;padding:3px>128</td>
+		<td style=border-style:solid;border-width:1px;border-color:#7f7f7f;padding:3px>identical</td>
+		<td style=border-style:solid;border-width:1px;border-color:#7f7f7f;padding:3px>DATA_WIDTH</td>
+		<td style=border-style:solid;border-width:1px;border-color:#7f7f7f;padding:3px></td>
+		<td style=border-style:solid;border-width:1px;border-color:#7f7f7f;padding:3px>INTEGER</td>
+		<td style=border-style:solid;border-width:1px;border-color:#7f7f7f;padding:3px>128</td>
+	</tr>
+</table>
+<br>
+<table style=text-align:center;vertical-align:center;font-size:15px;border-collapse:collapse>
+	<tr>
+		<th style=border-width:2px;border-style:solid;border-color:#0f0f0f;padding:3px colspan=7>Port Comments
+	</th></tr>
+	<tr style=text-align:center;vertical-align:center;font-size:15px;border-collapse:collapse>
+		<th style=border-width:2px;border-style:solid;border-color:#0f0f0f;padding:3px>Name</th>
+		<th style=border-width:2px;border-style:solid;border-color:#0f0f0f;padding:3px>Range</th>
+		<th style=border-width:2px;border-style:solid;border-color:#0f0f0f;padding:3px>Comment</th>
+		<th style=border-width:2px;border-style:solid;border-color:#0f0f0f;padding:3px></th>
+		<th style=border-width:2px;border-style:solid;border-color:#0f0f0f;padding:3px>Name</th>
+		<th style=border-width:2px;border-style:solid;border-color:#0f0f0f;padding:3px>Range</th>
+		<th style=border-width:2px;border-style:solid;border-color:#0f0f0f;padding:3px>Comment</th>
+	</tr>
+	<tr style=background-color:#ffffff;color:#000000>
+		<td style=border-style:solid;border-width:1px;border-color:#7f7f7f;padding:3px>reset</td>
+		<td style=border-style:solid;border-width:1px;border-color:#7f7f7f;padding:3px></td>
+		<td style=border-style:solid;border-width:1px;border-color:#7f7f7f;padding:3px></td>
+		<td style=border-style:solid;border-width:1px;border-color:#7f7f7f;padding:3px>identical</td>
+		<td style=border-style:solid;border-width:1px;border-color:#7f7f7f;padding:3px></td>
+		<td style=border-style:solid;border-width:1px;border-color:#7f7f7f;padding:3px></td>
+		<td style=border-style:solid;border-width:1px;border-color:#7f7f7f;padding:3px></td>
+	</tr>
+	<tr style=background-color:#ffffff;color:#000000>
+		<td style=border-style:solid;border-width:1px;border-color:#7f7f7f;padding:3px>instr</td>
+		<td style=border-style:solid;border-width:1px;border-color:#7f7f7f;padding:3px>(24 downto 0)</td>
+		<td style=border-style:solid;border-width:1px;border-color:#7f7f7f;padding:3px></td>
+		<td style=border-style:solid;border-width:1px;border-color:#7f7f7f;padding:3px>identical</td>
+		<td style=border-style:solid;border-width:1px;border-color:#7f7f7f;padding:3px>instr</td>
+		<td style=border-style:solid;border-width:1px;border-color:#7f7f7f;padding:3px>(24 downto 0)</td>
+		<td style=border-style:solid;border-width:1px;border-color:#7f7f7f;padding:3px></td>
+	</tr>
+	<tr style=background-color:#ffffff;color:#000000>
+		<td style=border-style:solid;border-width:1px;border-color:#7f7f7f;padding:3px>write_enable</td>
+		<td style=border-style:solid;border-width:1px;border-color:#7f7f7f;padding:3px></td>
+		<td style=border-style:solid;border-width:1px;border-color:#7f7f7f;padding:3px></td>
+		<td style=border-style:solid;border-width:1px;border-color:#7f7f7f;padding:3px>identical</td>
+		<td style=border-style:solid;border-width:1px;border-color:#7f7f7f;padding:3px>write_enable</td>
+		<td style=border-style:solid;border-width:1px;border-color:#7f7f7f;padding:3px></td>
+		<td style=border-style:solid;border-width:1px;border-color:#7f7f7f;padding:3px></td>
+	</tr>
+	<tr style=background-color:#ffffff;color:#000000>
+		<td style=border-style:solid;border-width:1px;border-color:#7f7f7f;padding:3px>rd_address_WB</td>
+		<td style=border-style:solid;border-width:1px;border-color:#7f7f7f;padding:3px>(4 downto 0)</td>
+		<td style=border-style:solid;border-width:1px;border-color:#7f7f7f;padding:3px></td>
+		<td style=border-style:solid;border-width:1px;border-color:#7f7f7f;padding:3px>identical</td>
+		<td style=border-style:solid;border-width:1px;border-color:#7f7f7f;padding:3px>rd_address_WB</td>
+		<td style=border-style:solid;border-width:1px;border-color:#7f7f7f;padding:3px>(4 downto 0)</td>
+		<td style=border-style:solid;border-width:1px;border-color:#7f7f7f;padding:3px></td>
+	</tr>
+	<tr style=background-color:#ffffff;color:#000000>
+		<td style=border-style:solid;border-width:1px;border-color:#7f7f7f;padding:3px>rd</td>
+		<td style=border-style:solid;border-width:1px;border-color:#7f7f7f;padding:3px>(127 downto 0)</td>
+		<td style=border-style:solid;border-width:1px;border-color:#7f7f7f;padding:3px></td>
+		<td style=border-style:solid;border-width:1px;border-color:#7f7f7f;padding:3px>identical</td>
+		<td style=border-style:solid;border-width:1px;border-color:#7f7f7f;padding:3px>rd</td>
+		<td style=border-style:solid;border-width:1px;border-color:#7f7f7f;padding:3px>(127 downto 0)</td>
+		<td style=border-style:solid;border-width:1px;border-color:#7f7f7f;padding:3px></td>
+	</tr>
+	<tr style=background-color:#ffffff;color:#000000>
+		<td style=border-style:solid;border-width:1px;border-color:#7f7f7f;padding:3px>clk</td>
+		<td style=border-style:solid;border-width:1px;border-color:#7f7f7f;padding:3px></td>
+		<td style=border-style:solid;border-width:1px;border-color:#7f7f7f;padding:3px></td>
+		<td style=border-style:solid;border-width:1px;border-color:#7f7f7f;padding:3px>identical</td>
+		<td style=border-style:solid;border-width:1px;border-color:#7f7f7f;padding:3px>clk</td>
+		<td style=border-style:solid;border-width:1px;border-color:#7f7f7f;padding:3px></td>
+		<td style=border-style:solid;border-width:1px;border-color:#7f7f7f;padding:3px></td>
+	</tr>
+	<tr style=background-color:#ffffff;color:#000000>
+		<td style=border-style:solid;border-width:1px;border-color:#7f7f7f;padding:3px>rs1_address</td>
+		<td style=border-style:solid;border-width:1px;border-color:#7f7f7f;padding:3px>(4 downto 0)</td>
+		<td style=border-style:solid;border-width:1px;border-color:#7f7f7f;padding:3px></td>
+		<td style=border-style:solid;border-width:1px;border-color:#7f7f7f;padding:3px>identical</td>
+		<td style=border-style:solid;border-width:1px;border-color:#7f7f7f;padding:3px>rs1_address</td>
+		<td style=border-style:solid;border-width:1px;border-color:#7f7f7f;padding:3px>(4 downto 0)</td>
+		<td style=border-style:solid;border-width:1px;border-color:#7f7f7f;padding:3px></td>
+	</tr>
+	<tr style=background-color:#ffffff;color:#000000>
+		<td style=border-style:solid;border-width:1px;border-color:#7f7f7f;padding:3px>rs2_address</td>
+		<td style=border-style:solid;border-width:1px;border-color:#7f7f7f;padding:3px>(4 downto 0)</td>
+		<td style=border-style:solid;border-width:1px;border-color:#7f7f7f;padding:3px></td>
+		<td style=border-style:solid;border-width:1px;border-color:#7f7f7f;padding:3px>identical</td>
+		<td style=border-style:solid;border-width:1px;border-color:#7f7f7f;padding:3px>rs2_address</td>
+		<td style=border-style:solid;border-width:1px;border-color:#7f7f7f;padding:3px>(4 downto 0)</td>
+		<td style=border-style:solid;border-width:1px;border-color:#7f7f7f;padding:3px></td>
+	</tr>
+	<tr style=background-color:#ffffff;color:#000000>
+		<td style=border-style:solid;border-width:1px;border-color:#7f7f7f;padding:3px>rs3_address</td>
+		<td style=border-style:solid;border-width:1px;border-color:#7f7f7f;padding:3px>(4 downto 0)</td>
+		<td style=border-style:solid;border-width:1px;border-color:#7f7f7f;padding:3px></td>
+		<td style=border-style:solid;border-width:1px;border-color:#7f7f7f;padding:3px>identical</td>
+		<td style=border-style:solid;border-width:1px;border-color:#7f7f7f;padding:3px>rs3_address</td>
+		<td style=border-style:solid;border-width:1px;border-color:#7f7f7f;padding:3px>(4 downto 0)</td>
+		<td style=border-style:solid;border-width:1px;border-color:#7f7f7f;padding:3px></td>
+	</tr>
+	<tr style=background-color:#ffffff;color:#000000>
+		<td style=border-style:solid;border-width:1px;border-color:#7f7f7f;padding:3px>rd_address</td>
+		<td style=border-style:solid;border-width:1px;border-color:#7f7f7f;padding:3px>(4 downto 0)</td>
+		<td style=border-style:solid;border-width:1px;border-color:#7f7f7f;padding:3px></td>
+		<td style=border-style:solid;border-width:1px;border-color:#7f7f7f;padding:3px>identical</td>
+		<td style=border-style:solid;border-width:1px;border-color:#7f7f7f;padding:3px>rd_address</td>
+		<td style=border-style:solid;border-width:1px;border-color:#7f7f7f;padding:3px>(4 downto 0)</td>
+		<td style=border-style:solid;border-width:1px;border-color:#7f7f7f;padding:3px></td>
+	</tr>
+	<tr style=background-color:#ffffff;color:#000000>
+		<td style=border-style:solid;border-width:1px;border-color:#7f7f7f;padding:3px>instr_out</td>
+		<td style=border-style:solid;border-width:1px;border-color:#7f7f7f;padding:3px>(24 downto 0)</td>
+		<td style=border-style:solid;border-width:1px;border-color:#7f7f7f;padding:3px></td>
+		<td style=border-style:solid;border-width:1px;border-color:#7f7f7f;padding:3px>identical</td>
+		<td style=border-style:solid;border-width:1px;border-color:#7f7f7f;padding:3px>instr_out</td>
+		<td style=border-style:solid;border-width:1px;border-color:#7f7f7f;padding:3px>(24 downto 0)</td>
+		<td style=border-style:solid;border-width:1px;border-color:#7f7f7f;padding:3px></td>
+	</tr>
+	<tr style=background-color:#ffffff;color:#000000>
+		<td style=border-style:solid;border-width:1px;border-color:#7f7f7f;padding:3px>opcode_out</td>
+		<td style=border-style:solid;border-width:1px;border-color:#7f7f7f;padding:3px>(9 downto 0)</td>
+		<td style=border-style:solid;border-width:1px;border-color:#7f7f7f;padding:3px></td>
+		<td style=border-style:solid;border-width:1px;border-color:#7f7f7f;padding:3px>identical</td>
+		<td style=border-style:solid;border-width:1px;border-color:#7f7f7f;padding:3px>opcode_out</td>
+		<td style=border-style:solid;border-width:1px;border-color:#7f7f7f;padding:3px>(9 downto 0)</td>
+		<td style=border-style:solid;border-width:1px;border-color:#7f7f7f;padding:3px></td>
+	</tr>
+	<tr style=background-color:#ffffff;color:#000000>
+		<td style=border-style:solid;border-width:1px;border-color:#7f7f7f;padding:3px>write_enable_out</td>
+		<td style=border-style:solid;border-width:1px;border-color:#7f7f7f;padding:3px></td>
+		<td style=border-style:solid;border-width:1px;border-color:#7f7f7f;padding:3px></td>
+		<td style=border-style:solid;border-width:1px;border-color:#7f7f7f;padding:3px>identical</td>
+		<td style=border-style:solid;border-width:1px;border-color:#7f7f7f;padding:3px>write_enable_out</td>
+		<td style=border-style:solid;border-width:1px;border-color:#7f7f7f;padding:3px></td>
+		<td style=border-style:solid;border-width:1px;border-color:#7f7f7f;padding:3px></td>
+	</tr>
+	<tr style=background-color:#ffffff;color:#000000>
+		<td style=border-style:solid;border-width:1px;border-color:#7f7f7f;padding:3px>rd_WB_out</td>
+		<td style=border-style:solid;border-width:1px;border-color:#7f7f7f;padding:3px>(127 downto 0)</td>
+		<td style=border-style:solid;border-width:1px;border-color:#7f7f7f;padding:3px></td>
+		<td style=border-style:solid;border-width:1px;border-color:#7f7f7f;padding:3px>identical</td>
+		<td style=border-style:solid;border-width:1px;border-color:#7f7f7f;padding:3px>rd_WB_out</td>
+		<td style=border-style:solid;border-width:1px;border-color:#7f7f7f;padding:3px>(127 downto 0)</td>
+		<td style=border-style:solid;border-width:1px;border-color:#7f7f7f;padding:3px></td>
+	</tr>
+	<tr style=background-color:#ffffff;color:#000000>
+		<td style=border-style:solid;border-width:1px;border-color:#7f7f7f;padding:3px>rd_address_WB_out</td>
+		<td style=border-style:solid;border-width:1px;border-color:#7f7f7f;padding:3px>(4 downto 0)</td>
+		<td style=border-style:solid;border-width:1px;border-color:#7f7f7f;padding:3px></td>
+		<td style=border-style:solid;border-width:1px;border-color:#7f7f7f;padding:3px>identical</td>
+		<td style=border-style:solid;border-width:1px;border-color:#7f7f7f;padding:3px>rd_address_WB_out</td>
+		<td style=border-style:solid;border-width:1px;border-color:#7f7f7f;padding:3px>(4 downto 0)</td>
+		<td style=border-style:solid;border-width:1px;border-color:#7f7f7f;padding:3px></td>
+	</tr>
+	<tr style=background-color:#ffffff;color:#000000>
+		<td style=border-style:solid;border-width:1px;border-color:#7f7f7f;padding:3px>rs1_address_out</td>
+		<td style=border-style:solid;border-width:1px;border-color:#7f7f7f;padding:3px>(4 downto 0)</td>
+		<td style=border-style:solid;border-width:1px;border-color:#7f7f7f;padding:3px></td>
+		<td style=border-style:solid;border-width:1px;border-color:#7f7f7f;padding:3px>identical</td>
+		<td style=border-style:solid;border-width:1px;border-color:#7f7f7f;padding:3px>rs1_address_out</td>
+		<td style=border-style:solid;border-width:1px;border-color:#7f7f7f;padding:3px>(4 downto 0)</td>
+		<td style=border-style:solid;border-width:1px;border-color:#7f7f7f;padding:3px></td>
+	</tr>
+	<tr style=background-color:#ffffff;color:#000000>
+		<td style=border-style:solid;border-width:1px;border-color:#7f7f7f;padding:3px>rs2_address_out</td>
+		<td style=border-style:solid;border-width:1px;border-color:#7f7f7f;padding:3px>(4 downto 0)</td>
+		<td style=border-style:solid;border-width:1px;border-color:#7f7f7f;padding:3px></td>
+		<td style=border-style:solid;border-width:1px;border-color:#7f7f7f;padding:3px>identical</td>
+		<td style=border-style:solid;border-width:1px;border-color:#7f7f7f;padding:3px>rs2_address_out</td>
+		<td style=border-style:solid;border-width:1px;border-color:#7f7f7f;padding:3px>(4 downto 0)</td>
+		<td style=border-style:solid;border-width:1px;border-color:#7f7f7f;padding:3px></td>
+	</tr>
+	<tr style=background-color:#ffffff;color:#000000>
+		<td style=border-style:solid;border-width:1px;border-color:#7f7f7f;padding:3px>rs3_address_out</td>
+		<td style=border-style:solid;border-width:1px;border-color:#7f7f7f;padding:3px>(4 downto 0)</td>
+		<td style=border-style:solid;border-width:1px;border-color:#7f7f7f;padding:3px></td>
+		<td style=border-style:solid;border-width:1px;border-color:#7f7f7f;padding:3px>identical</td>
+		<td style=border-style:solid;border-width:1px;border-color:#7f7f7f;padding:3px>rs3_address_out</td>
+		<td style=border-style:solid;border-width:1px;border-color:#7f7f7f;padding:3px>(4 downto 0)</td>
+		<td style=border-style:solid;border-width:1px;border-color:#7f7f7f;padding:3px></td>
+	</tr>
+	<tr style=background-color:#ffffff;color:#000000>
+		<td style=border-style:solid;border-width:1px;border-color:#7f7f7f;padding:3px>rd_address_out</td>
+		<td style=border-style:solid;border-width:1px;border-color:#7f7f7f;padding:3px>(4 downto 0)</td>
+		<td style=border-style:solid;border-width:1px;border-color:#7f7f7f;padding:3px></td>
+		<td style=border-style:solid;border-width:1px;border-color:#7f7f7f;padding:3px>identical</td>
+		<td style=border-style:solid;border-width:1px;border-color:#7f7f7f;padding:3px>rd_address_out</td>
+		<td style=border-style:solid;border-width:1px;border-color:#7f7f7f;padding:3px>(4 downto 0)</td>
+		<td style=border-style:solid;border-width:1px;border-color:#7f7f7f;padding:3px></td>
+	</tr>
+	<tr style=background-color:#ffffff;color:#000000>
+		<td style=border-style:solid;border-width:1px;border-color:#7f7f7f;padding:3px>rs1_data_out</td>
+		<td style=border-style:solid;border-width:1px;border-color:#7f7f7f;padding:3px>(127 downto 0)</td>
+		<td style=border-style:solid;border-width:1px;border-color:#7f7f7f;padding:3px></td>
+		<td style=border-style:solid;border-width:1px;border-color:#7f7f7f;padding:3px>identical</td>
+		<td style=border-style:solid;border-width:1px;border-color:#7f7f7f;padding:3px>rs1_data_out</td>
+		<td style=border-style:solid;border-width:1px;border-color:#7f7f7f;padding:3px>(127 downto 0)</td>
+		<td style=border-style:solid;border-width:1px;border-color:#7f7f7f;padding:3px></td>
+	</tr>
+	<tr style=background-color:#ffffff;color:#000000>
+		<td style=border-style:solid;border-width:1px;border-color:#7f7f7f;padding:3px>rs2_data_out</td>
+		<td style=border-style:solid;border-width:1px;border-color:#7f7f7f;padding:3px>(127 downto 0)</td>
+		<td style=border-style:solid;border-width:1px;border-color:#7f7f7f;padding:3px></td>
+		<td style=border-style:solid;border-width:1px;border-color:#7f7f7f;padding:3px>identical</td>
+		<td style=border-style:solid;border-width:1px;border-color:#7f7f7f;padding:3px>rs2_data_out</td>
+		<td style=border-style:solid;border-width:1px;border-color:#7f7f7f;padding:3px>(127 downto 0)</td>
+		<td style=border-style:solid;border-width:1px;border-color:#7f7f7f;padding:3px></td>
+	</tr>
+	<tr style=background-color:#ffffff;color:#000000>
+		<td style=border-style:solid;border-width:1px;border-color:#7f7f7f;padding:3px>rs3_data_out</td>
+		<td style=border-style:solid;border-width:1px;border-color:#7f7f7f;padding:3px>(127 downto 0)</td>
+		<td style=border-style:solid;border-width:1px;border-color:#7f7f7f;padding:3px></td>
+		<td style=border-style:solid;border-width:1px;border-color:#7f7f7f;padding:3px>identical</td>
+		<td style=border-style:solid;border-width:1px;border-color:#7f7f7f;padding:3px>rs3_data_out</td>
+		<td style=border-style:solid;border-width:1px;border-color:#7f7f7f;padding:3px>(127 downto 0)</td>
+		<td style=border-style:solid;border-width:1px;border-color:#7f7f7f;padding:3px></td>
+	</tr>
+	<tr style=background-color:#ffffff;color:#000000>
+		<td style=border-style:solid;border-width:1px;border-color:#7f7f7f;padding:3px>rd_data_out</td>
+		<td style=border-style:solid;border-width:1px;border-color:#7f7f7f;padding:3px>(127 downto 0)</td>
+		<td style=border-style:solid;border-width:1px;border-color:#7f7f7f;padding:3px></td>
+		<td style=border-style:solid;border-width:1px;border-color:#7f7f7f;padding:3px>identical</td>
+		<td style=border-style:solid;border-width:1px;border-color:#7f7f7f;padding:3px>rd_data_out</td>
+		<td style=border-style:solid;border-width:1px;border-color:#7f7f7f;padding:3px>(127 downto 0)</td>
+		<td style=border-style:solid;border-width:1px;border-color:#7f7f7f;padding:3px></td>
+	</tr>
+	<tr style=background-color:#ffffff;color:#000000>
+		<td style=border-style:solid;border-width:1px;border-color:#7f7f7f;padding:3px>opcode</td>
+		<td style=border-style:solid;border-width:1px;border-color:#7f7f7f;padding:3px>(9 downto 0)</td>
+		<td style=border-style:solid;border-width:1px;border-color:#7f7f7f;padding:3px></td>
+		<td style=border-style:solid;border-width:1px;border-color:#7f7f7f;padding:3px>identical</td>
+		<td style=border-style:solid;border-width:1px;border-color:#7f7f7f;padding:3px>opcode</td>
+		<td style=border-style:solid;border-width:1px;border-color:#7f7f7f;padding:3px>(9 downto 0)</td>
+		<td style=border-style:solid;border-width:1px;border-color:#7f7f7f;padding:3px></td>
+	</tr>
+	<tr style=background-color:#ffffff;color:#000000>
+		<td style=border-style:solid;border-width:1px;border-color:#7f7f7f;padding:3px>rs1</td>
+		<td style=border-style:solid;border-width:1px;border-color:#7f7f7f;padding:3px>(127 downto 0)</td>
+		<td style=border-style:solid;border-width:1px;border-color:#7f7f7f;padding:3px></td>
+		<td style=border-style:solid;border-width:1px;border-color:#7f7f7f;padding:3px>identical</td>
+		<td style=border-style:solid;border-width:1px;border-color:#7f7f7f;padding:3px>rs1</td>
+		<td style=border-style:solid;border-width:1px;border-color:#7f7f7f;padding:3px>(127 downto 0)</td>
+		<td style=border-style:solid;border-width:1px;border-color:#7f7f7f;padding:3px></td>
+	</tr>
+	<tr style=background-color:#ffffff;color:#000000>
+		<td style=border-style:solid;border-width:1px;border-color:#7f7f7f;padding:3px>rs2</td>
+		<td style=border-style:solid;border-width:1px;border-color:#7f7f7f;padding:3px>(127 downto 0)</td>
+		<td style=border-style:solid;border-width:1px;border-color:#7f7f7f;padding:3px></td>
+		<td style=border-style:solid;border-width:1px;border-color:#7f7f7f;padding:3px>identical</td>
+		<td style=border-style:solid;border-width:1px;border-color:#7f7f7f;padding:3px>rs2</td>
+		<td style=border-style:solid;border-width:1px;border-color:#7f7f7f;padding:3px>(127 downto 0)</td>
+		<td style=border-style:solid;border-width:1px;border-color:#7f7f7f;padding:3px></td>
+	</tr>
+	<tr style=background-color:#ffffff;color:#000000>
+		<td style=border-style:solid;border-width:1px;border-color:#7f7f7f;padding:3px>rs3</td>
+		<td style=border-style:solid;border-width:1px;border-color:#7f7f7f;padding:3px>(127 downto 0)</td>
+		<td style=border-style:solid;border-width:1px;border-color:#7f7f7f;padding:3px></td>
+		<td style=border-style:solid;border-width:1px;border-color:#7f7f7f;padding:3px>identical</td>
+		<td style=border-style:solid;border-width:1px;border-color:#7f7f7f;padding:3px>rs3</td>
+		<td style=border-style:solid;border-width:1px;border-color:#7f7f7f;padding:3px>(127 downto 0)</td>
+		<td style=border-style:solid;border-width:1px;border-color:#7f7f7f;padding:3px></td>
+	</tr>
+	<tr style=background-color:#ffffff;color:#000000>
+		<td style=border-style:solid;border-width:1px;border-color:#7f7f7f;padding:3px></td>
+		<td style=border-style:solid;border-width:1px;border-color:#7f7f7f;padding:3px></td>
+		<td style=border-style:solid;border-width:1px;border-color:#7f7f7f;padding:3px></td>
+		<td style=border-style:solid;border-width:1px;border-color:#7f7f7f;padding:3px>identical</td>
+		<td style=border-style:solid;border-width:1px;border-color:#7f7f7f;padding:3px>instr_toFoward</td>
+		<td style=border-style:solid;border-width:1px;border-color:#7f7f7f;padding:3px>(24 downto 0)</td>
+		<td style=border-style:solid;border-width:1px;border-color:#7f7f7f;padding:3px></td>
+	</tr>
+</table>
+<br></SPAN><BR>
+<SPAN class=Warn1>Found 2 differences.</SPAN><BR>
+</tt>
+</BODY>
+
+</HTML>

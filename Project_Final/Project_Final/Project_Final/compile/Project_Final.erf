@@ -1,0 +1,32 @@
+WARNING DAGGEN_0523: "The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available."
+MESSAGE "File: C:/Users/Tyguan/Desktop/ESE 345/Project/Project_Final/Project_Final/Project_Final/src/PipeLine_tb.vhd" 
+BEGINPROGRESS C:/Users/Tyguan/Desktop/ESE 345/Project/Project_Final/Project_Final/Project_Final/src/PipeLine_tb.vhd
+UPDATEPROGRESS 2
+MESSAGE "Compile Entity "pipeline_tb"" 
+MESSAGE "Compile Architecture "behav" of Entity "pipeline_tb"" 
+UPDATEPROGRESS 3
+UPDATEPROGRESS 4
+UPDATEPROGRESS 5
+UPDATEPROGRESS 6
+UPDATEPROGRESS 7
+UPDATEPROGRESS 8
+UPDATEPROGRESS 9
+UPDATEPROGRESS 10
+UPDATEPROGRESS 11
+UPDATEPROGRESS 12
+UPDATEPROGRESS 13
+UPDATEPROGRESS 14
+UPDATEPROGRESS 15
+UPDATEPROGRESS 16
+UPDATEPROGRESS 17
+UPDATEPROGRESS 28
+UPDATEPROGRESS 30
+UPDATEPROGRESS 33
+UPDATEPROGRESS 34
+UPDATEPROGRESS 38
+UPDATEPROGRESS 93
+UPDATEPROGRESS 98
+UPDATEPROGRESS 99
+UPDATEPROGRESS 100
+ENDPROGRESS C:/Users/Tyguan/Desktop/ESE 345/Project/Project_Final/Project_Final/Project_Final/src/PipeLine_tb.vhd
+SUCCESS "Compile success 0 Errors 0 Warnings  Analysis time :  0.1 [s]" 

@@ -1,0 +1,15 @@
+636
+~E 1 "../src/alu.vhd" 8 alu
+~A 1 "../src/alu.vhd" 32 alu_arch
+~E 1 "../src/Four_Stage_Pipeline.vhd" 9 Four_Stage_Pipeline
+~A 1 "../src/Four_Stage_Pipeline.vhd" 77 Four_Stage_Pipeline_arch
+~E 1 "../src/Fowarding_Mux.vhd" 6 Fowarding_Mux
+~A 1 "../src/Fowarding_Mux.vhd" 45 Fowarding_Mux_arch
+~E 1 "../src/Fowarding_Unit.vhd" 6 fowarding_unit
+~A 1 "../src/Fowarding_Unit.vhd" 41 fowarding_unit_arch
+~E 1 "../src/Instr_buffer.vhd" 7 Instr_buffer
+~A 1 "../src/Instr_buffer.vhd" 32 Instr_buffer_arch
+~E 1 "../src/PipeLine_tb.vhd" 13 pipeline_tb
+~A 1 "../src/PipeLine_tb.vhd" 16 behav
+~E 1 "../src/Register_File.vhd" 11 Register_file
+~A 1 "../src/Register_File.vhd" 66 Register_file_arch

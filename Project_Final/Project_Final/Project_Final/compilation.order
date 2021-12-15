@@ -1,0 +1,8 @@
+.\src\Reg_File_Mem_Type.vhd
+.\src\Fowarding_Mux.vhd
+.\src\Register_File.vhd
+.\src\Instr_buffer.vhd
+.\src\Fowarding_Unit.vhd
+.\src\alu.vhd
+.\src\Four_Stage_Pipeline.vhd
+.\src\PipeLine_tb.vhd

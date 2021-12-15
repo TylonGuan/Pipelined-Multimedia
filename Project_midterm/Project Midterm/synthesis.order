@@ -1,0 +1,7 @@
+i<>.\src\alu.vhd
+i<>.\src\TestBench.vhd
+i<>.\src\Register File.vhd
+i<>.\src\testRegFile.vhd
+i<>.\src\Instr_buffer.vhd
+i<>.\src\Fowarding_Unit.vhd
+i<>.\src\Four_Stage_Pipeline.vhd

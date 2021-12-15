@@ -1,0 +1,76 @@
+[Project]
+Current Flow=Generic
+VCS=0
+version=4
+Current Config=compile
+
+[Configurations]
+compile=Project_Midterm
+
+[Library]
+Project_Midterm=.\Project_Midterm\Project_Midterm.lib
+
+[$LibMap$]
+Project_Midterm=.
+Active_lib=
+
+[Settings]
+FLOW_TYPE=HDL
+LANGUAGE=VHDL
+REFRESH_FLOW=1
+FLOWTOOLS=NONE
+FAMILY=
+
+[SpecTracer]
+WindowVisible=0
+
+[HierarchyViewer]
+HierarchyInformation=testregfile|testRegFile_Arch|0  
+ShowHide=ShowTopLevel
+Selected=
+
+[Files]
+/alu.vhd=-1
+/Register_File.vhd=-1
+/TestBench.vhd=-1
+/testRegFile.vhd=-1
+/register_lookup.vhd=-1
+/Instr_buffer.vhd=-1
+/Fowarding_Unit.vhd=-1
+/Four_Stage_Pipeline.vhd=-1
+
+[Files.Data]
+.\src\alu.vhd=VHDL Source Code
+.\src\Register_File.vhd=VHDL Source Code
+.\src\TestBench.vhd=VHDL Source Code
+.\src\testRegFile.vhd=VHDL Source Code
+
+.\src\register_lookup.vhd=VHDL Source Code
+.\src\Instr_buffer.vhd=VHDL Source Code
+.\src\Fowarding_Unit.vhd=VHDL Source Code
+.\src\Four_Stage_Pipeline.vhd=VHDL Source Code
+[Folders]
+Name0=Event Lists
+Directory0=C:\Users\Tyguan\Desktop\ESE 345\Project\Project_midterm\Project Midterm\
+Extension0=lst
+Name1=Logs
+Directory1=C:\Users\Tyguan\Desktop\ESE 345\Project\Project_midterm\Project Midterm\
+Extension1=log;htm;xml;txt
+Name2=Waveforms
+Directory2=C:\Users\Tyguan\Desktop\ESE 345\Project\Project_midterm\Project Midterm\
+Extension2=asdb;awc;asdbc;asdbe
+Name3=Makefiles
+Directory3=C:\Users\Tyguan\Desktop\ESE 345\Project\Project_midterm\Project Midterm\
+Extension3=mak
+Name4=Memory
+Directory4=C:\Users\Tyguan\Desktop\ESE 345\Project\Project_midterm\Project Midterm\
+Extension4=mem;mif;hex
+Name5=Dll Libraries
+Directory5=C:\Users\Tyguan\Desktop\ESE 345\Project\Project_midterm\Project Midterm\
+Extension5=dll
+Name6=PDF
+Directory6=C:\Users\Tyguan\Desktop\ESE 345\Project\Project_midterm\Project Midterm\
+Extension6=pdf
+Name7=HTML
+Directory7=C:\Users\Tyguan\Desktop\ESE 345\Project\Project_midterm\Project Midterm\
+Extension7=htm;html

@@ -1,0 +1,5 @@
+WARNING DAGGEN_0523: "The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available."
+MESSAGE "File: C:/Users/Tyguan/Desktop/ESE 345/Project/Project_midterm/Project Midterm/src/Four_Stage_Pipeline.vhd" 
+MESSAGE "Compile Entity "Four_Stage_Pipeline"" 
+MESSAGE "Compile Architecture "Four_Stage_Pipeline_arch" of Entity "Four_Stage_Pipeline"" 
+SUCCESS "Compile success 0 Errors 0 Warnings  Analysis time :  78.0 [ms]" 
